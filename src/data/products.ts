@@ -3,10 +3,10 @@ import { Product } from '../types';
 export const PRODUCTS: Product[] = [
   {
     id: 'horn-elephant-sculpture',
-    title: 'Paralakhemundi Buffalo Horn Royal Elephant Sculpture',
-    regionalTitle: 'ପାରଳାଖେମୁଣ୍ଡି ସିଙ୍ଗ ହାତୀ (Shringa Hati)',
+    title: 'Paralakhemundi Shringa Silpa: Buffalo Horn Royal Elephant Sculpture',
+    regionalTitle: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ: ସିଙ୍ଗ ହାତୀ (Shringa Hati)',
     category: 'horn-art',
-    categoryLabel: 'Traditional Horn Artwork',
+    categoryLabel: 'Paralakhemundi Shringa Silpa',
     tagline: 'Authentic Gajapati heritage carving with deep ebony & amber translucent luster',
     description: 'Masterfully chiseled from naturally shed Asian water buffalo horn (Bubalus bubalis) by hereditary artisans of Paralakhemundi. The horn is gently softened over open flame using mustard oil, hand-sawn, chiseled into a royal elephant silhouette, and buffed with charcoal powder and dry Kendu leaves to reveal natural marbleized ebony-to-caramel amber streaks without synthetic lacquer.',
     material: 'Natural Asian Water Buffalo Horn (100% Cruelty-free byproduct)',
@@ -24,7 +24,7 @@ export const PRODUCTS: Product[] = [
       'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80'
     ],
     specifications: [
-      { label: 'Craft Form', value: 'Paralakhemundi Shringa Silpa (Horn Craft of Odisha)' },
+      { label: 'Craft Discipline', value: 'Paralakhemundi Shringa Silpa (Gajapati Horn Craft of Odisha)' },
       { label: 'Raw Material', value: 'Seasoned Asian water buffalo horn (non-wildlife, legal byproduct)' },
       { label: 'Surface Finish', value: 'Buffed with dry Kendu leaf & charcoal ash (glass-like luster)' },
       { label: 'Artisan Lineage', value: 'Hereditary Maharana artisan guild, southern Odisha' },
@@ -34,10 +34,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'horn-crane-pair-sculpture',
-    title: 'Traditional Crane Pair Horn Artwork ("Sarapanki")',
-    regionalTitle: 'ସିଙ୍ଗ ସାରପଙ୍କି ଓ ବଗ ଯୋଡ଼ି (Sarapanki)',
+    title: 'Paralakhemundi Shringa Silpa: Crane Pair Sculpture ("Sarapanki")',
+    regionalTitle: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ: ସାରପଙ୍କି (Sarapanki)',
     category: 'horn-art',
-    categoryLabel: 'Traditional Horn Artwork',
+    categoryLabel: 'Paralakhemundi Shringa Silpa',
     tagline: 'Iconic historic bird motif carved with fluid curved necks forming a heart',
     description: 'The "Sarapanki" is the crowning motif of Odisha horn artistry, originally designed in the early 1900s for Maharaja Krushna Chandra Gajapati. Two graceful long-neck cranes are sculpted facing each other with arched necks that meet to symbolize harmony and devotion. The natural curve of the horn segment provides natural tensile strength and organic curvature.',
     material: 'Natural Cattle & Buffalo Horn on solid horn pedestal',
@@ -64,10 +64,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'horn-ornate-carved-comb',
-    title: 'Heritage Filigree Carved Buffalo Horn Hair Combs (Kanghi)',
-    regionalTitle: 'ପାରମ୍ପରିକ ସିଙ୍ଗ ପାନିଆ (Shringa Pania)',
+    title: 'Paralakhemundi Shringa Silpa: Carved Horn Hair Combs (Kanghi)',
+    regionalTitle: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ: ପାନିଆ (Shringa Pania)',
     category: 'horn-art',
-    categoryLabel: 'Traditional Horn Artwork',
+    categoryLabel: 'Paralakhemundi Shringa Silpa',
     tagline: 'Hand-pierced openwork peacock & vine crest with anti-static grooming teeth',
     description: 'Traditional Odisha horn hair combs (Kanghi) have been prized for centuries in Indian royal households and bridal trousseaus. Handcrafted from solid buffalo horn plates, each comb features individually sawn, rounded teeth that glide smoothly without generating static electricity or scratching the scalp, crowned with delicate pierced filigree motifs of peacocks and creepers.',
     material: 'Natural Solid Buffalo Horn',
@@ -94,10 +94,10 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'horn-tableware-cutlery-set',
-    title: 'Artisan Polished Horn Tasting Spoons & Salad Servers',
-    regionalTitle: 'ହସ୍ତତନ୍ତ୍ର ସିଙ୍ଗ ଚାମଚ ଓ ବାସନ (Shringa Chamacha)',
+    title: 'Paralakhemundi Shringa Silpa: Artisan Horn Spoons & Tableware Set',
+    regionalTitle: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ: ଚାମଚ ଓ ବାସନ (Shringa Chamacha)',
     category: 'horn-art',
-    categoryLabel: 'Traditional Horn Artwork',
+    categoryLabel: 'Paralakhemundi Shringa Silpa',
     tagline: 'Smooth ergonomic tableware with natural golden-caramel & ebony marbling',
     description: 'Pair of handcrafted horn serving spoons, salad tossers, and caviar spoons. Because genuine horn is chemically non-reactive, it does not alter the delicate flavor of caviar, citrus salads, or acidic dressings. Each utensil is shaped by hand, finely sanded, and sealed with food-grade organic beeswax.',
     material: '100% Natural Asian Water Buffalo Horn',
@@ -303,7 +303,7 @@ export const EXPORTER_PROFILE = {
   whatsappRaw: '919861097633',
   email: 'subhasish2499@gmail.com',
   specialties: [
-    'Traditional Horn Artwork (Buffalo & Cattle Horn)',
+    'Paralakhemundi Shringa Silpa (Traditional Horn Artwork)',
     'Pattachitra (Hand-painted Cloth Scrolls)',
     'Handcrafted Stone Carvings & Sculptures',
     'Custom Odisha Handicrafts & Bespoke Sourcing'
@@ -326,9 +326,9 @@ export interface CategorySourcingInfo {
 export const CATEGORY_SOURCING_INFO: CategorySourcingInfo[] = [
   {
     id: 'horn-art',
-    name: 'Traditional Horn Artwork',
-    regionalOdishaName: 'ସିଙ୍ଗ କାମ (Shringa Silpa)',
-    tagline: 'Paralakhemundi & Cuttack Heritage Horn Carving',
+    name: 'Paralakhemundi Shringa Silpa',
+    regionalOdishaName: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ (Horn Art)',
+    tagline: 'Gajapati Royal Heritage Buffalo & Cattle Horn Carving',
     moq: '10–15 pieces per motif',
     turnaround: '15–22 days depending on batch volume',
     description: 'Carved from natural cattle and water buffalo horn through generational heat-molding, hand chiseling, and Kendu leaf and charcoal buffing. Features our signature high-gloss ebony-to-amber translucent luster without chemical lacquers.',

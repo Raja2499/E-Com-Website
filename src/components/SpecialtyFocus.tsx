@@ -24,20 +24,20 @@ export const SpecialtyFocus: React.FC<SpecialtyFocusProps> = ({
   const specialties = [
     {
       id: 'horn-art' as ProductCategory,
-      title: 'Traditional Horn Artwork',
-      odiaName: 'ସିଙ୍ଗ କାମ (Shringa Silpa)',
-      badge: 'HERITAGE SPECIALTY',
-      subtitle: 'Handcrafted Cattle & Buffalo Horn Art',
-      description: 'One of our most celebrated specialties. Master craftsmen of Paralakhemundi and Cuttack shape natural cattle and buffalo horn through heat manipulation, precision chiseling, and organic leaf buffing into graceful decorative creations.',
+      title: 'Paralakhemundi Shringa Silpa',
+      odiaName: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ (Horn Art)',
+      badge: 'ROYAL HERITAGE SPECIALTY',
+      subtitle: 'Gajapati Heritage Cattle & Buffalo Horn Art',
+      description: 'One of Odisha\'s most celebrated royal crafts. Master hereditary craftsmen of Paralakhemundi shape naturally shed cattle and buffalo horn through delicate heat manipulation, precision chiseling, and organic Kendu leaf buffing into graceful decorative creations.',
       popularItems: [
-        'Majestic Elephants & Wildlife Statuettes',
-        'Graceful Crane & Avian Tabletop Sculptures',
-        'Traditional Hand-Carved Filigree Combs',
+        'Paralakhemundi Royal Elephants & Tabletop Statuettes',
+        'Historic "Sarapanki" Long-Neck Crane Pairs',
+        'Hand-Carved Pierced Filigree Buffalo Horn Combs',
         'Artisanal Tasting Cutlery & Organic Tableware'
       ],
-      heritageNote: 'Centuries-old heritage with natural amber-to-ebony translucent marbling. 100% natural, ethically sourced byproduct.',
+      heritageNote: 'Centuries-old Gajapati heritage with natural amber-to-ebony translucent marbling. 100% natural, ethically sourced byproduct.',
       imageUrl: 'https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=800&q=80',
-      actionText: 'View Horn Art Collection'
+      actionText: 'View Paralakhemundi Shringa Silpa'
     },
     {
       id: 'pattachitra' as ProductCategory,

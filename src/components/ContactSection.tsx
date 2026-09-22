@@ -249,7 +249,7 @@ export const ContactSection: React.FC = () => {
                         onChange={(e) => setFormData({ ...formData, productInterest: e.target.value })}
                         className="w-full px-3.5 py-2.5 rounded-xl bg-[#17110c] border border-amber-950 text-stone-200 focus:outline-none focus:border-amber-500"
                       >
-                        <option value="Traditional Horn Artwork (ସିଙ୍ଗ କାମ)">Traditional Horn Artwork (Elephants, Cranes, Combs)</option>
+                        <option value="Paralakhemundi Shringa Silpa (ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ)">Paralakhemundi Shringa Silpa (Horn Art - Elephants, Cranes, Combs)</option>
                         <option value="Pattachitra Cloth Paintings (ପଟ୍ଟଚିତ୍ର)">Pattachitra Cloth Paintings (Tree of Life, Krishna Leela)</option>
                         <option value="Handmade Stone Carvings (ପଥର ଖୋଦେଇ)">Stone Carvings & Konark Sun Wheel</option>
                         <option value="Custom & Metal Crafts (ଢୋକ୍ରା)">Dhokra Lost-Wax Bell Metal & Custom Crafts</option>

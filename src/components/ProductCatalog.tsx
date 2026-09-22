@@ -32,7 +32,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
     { id: 'all', label: 'All Heritage Crafts', count: PRODUCTS.length },
     { 
       id: 'horn-art', 
-      label: 'Traditional Horn Art', 
+      label: 'Paralakhemundi Shringa Silpa', 
       count: PRODUCTS.filter(p => p.category === 'horn-art').length 
     },
     { 
@@ -77,8 +77,9 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
               Handcrafted Product Showcase
             </h2>
             <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-              Explore authentic pieces sculpted, painted, and cast by master artisans. 
-              Click on any piece to review dimensions, artisanal lineage, and materials.
+              Explore authentic pieces sculpted, painted, and cast by master artisans across Odisha. 
+              Featuring our premier <strong className="text-amber-300 font-semibold">Paralakhemundi Shringa Silpa (ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ)</strong>, 
+              Raghurajpur Pattachitra, and Konark Stone Carvings.
               Custom quotations provided on request for domestic Indian stores and international consignments.
             </p>
           </div>
@@ -132,6 +133,35 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
           </div>
 
         </div>
+
+        {/* Paralakhemundi Shringa Silpa Dedicated Showcase Highlight Banner */}
+        {selectedCategory === 'horn-art' && (
+          <div className="mb-8 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-amber-950/80 via-[#261b13] to-[#1a120c] border border-amber-700/60 shadow-xl text-left flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="space-y-2 max-w-3xl">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-300 text-[11px] font-bold uppercase tracking-wider">
+                  ଗଜପତି ପାରଳାଖେମୁଣ୍ଡି • Royal Heritage Craft
+                </span>
+                <span className="text-stone-400 text-xs">•</span>
+                <span className="text-amber-400 font-medium text-xs">ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ</span>
+              </div>
+              <h3 className="font-display text-xl font-bold text-amber-100">
+                Paralakhemundi Shringa Silpa (Traditional Horn Artwork)
+              </h3>
+              <p className="text-xs text-stone-300 leading-relaxed">
+                Celebrated royal heritage horn craft nurtured under the Gajapati dynasty of Paralakhemundi. Hereditary artisans shape naturally shed Asian water buffalo and cattle horn over open flame, hand-chiseling intricate wildlife, iconic "Sarapanki" crane pairs, and grooming combs, then buffing with dry Kendu leaves and charcoal ash for a deep glass-like natural amber and ebony sheen.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row md:flex-col gap-2 flex-shrink-0">
+              <span className="px-3 py-1.5 rounded-xl bg-[#17100b] border border-amber-800/60 text-amber-300 text-[11px] font-semibold text-center">
+                100% Ethical Byproduct
+              </span>
+              <span className="px-3 py-1.5 rounded-xl bg-[#17100b] border border-amber-800/60 text-stone-300 text-[11px] text-center">
+                No Synthetic Lacquers
+              </span>
+            </div>
+          </div>
+        )}
 
         {/* Product Grid - Pure Showcase without individual price tags */}
         {filteredProducts.length === 0 ? (

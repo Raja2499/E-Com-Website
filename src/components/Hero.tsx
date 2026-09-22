@@ -161,7 +161,7 @@ export const Hero: React.FC<HeroProps> = ({
                   {/* Subtle traditional Odisha motif watermark badge */}
                   <div className="absolute top-4 left-4 px-3 py-1.5 rounded-lg bg-stone-950/80 backdrop-blur-md border border-amber-600/40 text-[11px] font-semibold text-amber-300 flex items-center gap-1.5">
                     <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-                    <span>Crown Specialty: Odisha Horn Art</span>
+                    <span>Crown Specialty: Paralakhemundi Shringa Silpa</span>
                   </div>
 
                   {/* Caption overlay */}
@@ -174,9 +174,12 @@ export const Hero: React.FC<HeroProps> = ({
                         Sourcing Available
                       </span>
                     </div>
-                    <h3 className="font-display text-sm font-bold text-amber-100">
-                      Paralakhemundi Shringa Silpa
-                    </h3>
+                    <div className="flex items-baseline justify-between gap-2">
+                      <h3 className="font-display text-sm font-bold text-amber-100">
+                        Paralakhemundi Shringa Silpa
+                      </h3>
+                      <span className="text-[11px] text-amber-400/90 font-medium">ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ</span>
+                    </div>
                     <p className="text-[11px] text-stone-300 leading-relaxed">
                       Generational craftsmen hand-carve and buff natural cattle & water buffalo horn to an exquisite natural amber & ebony sheen.
                     </p>

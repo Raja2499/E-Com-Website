@@ -78,7 +78,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 HERITAGE CRAFTS INDIA
               </span>
               <span className="block text-[11px] tracking-wider uppercase text-amber-400/90 font-medium">
-                Traditional Horn Artwork • Pattachitra • Stone Carving
+                Paralakhemundi Shringa Silpa • Pattachitra • Stone Carving
               </span>
             </div>
           </a>
