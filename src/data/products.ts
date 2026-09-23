@@ -14,7 +14,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '18 × 7 × 15 cm',
     dimensionsInches: '7.1 × 2.8 × 5.9 in',
     weightGrams: '420g',
-    moq: '10–15 pcs (Trial orders welcomed)',
+    moq: 'Flexible • From 5–10 pcs (Sample pieces supported)',
     productionLeadTime: '15–20 days',
     customizationAvailable: true,
     featured: true,
@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '25 × 9 × 22 cm',
     dimensionsInches: '9.8 × 3.5 × 8.6 in',
     weightGrams: '380g',
-    moq: '10–12 pcs',
+    moq: 'Flexible • From 5–10 pcs (Sample pair supported)',
     productionLeadTime: '15–22 days',
     customizationAvailable: true,
     featured: true,
@@ -75,7 +75,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '16 × 5 × 0.8 cm per piece',
     dimensionsInches: '6.3 × 2.0 × 0.3 in',
     weightGrams: '65g each (Set ~195g)',
-    moq: '25–30 sets (Custom bulk branding available)',
+    moq: 'Flexible • From 10–15 sets (Sample set supported)',
     productionLeadTime: '10–15 days',
     customizationAvailable: true,
     featured: false,
@@ -105,7 +105,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '24 × 6 × 2 cm',
     dimensionsInches: '9.4 × 2.4 × 0.8 in',
     weightGrams: '180g / pair',
-    moq: '20–25 pairs',
+    moq: 'Flexible • From 10–15 pairs (Sample pair supported)',
     productionLeadTime: '12–18 days',
     customizationAvailable: true,
     featured: false,
@@ -134,7 +134,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '60 × 90 cm (Custom panels up to 120 × 180 cm)',
     dimensionsInches: '23.6 × 35.4 in',
     weightGrams: '320g (Unframed cloth scroll)',
-    moq: '3–5 pieces',
+    moq: 'Flexible • From 2–3 pcs (Single commission supported)',
     productionLeadTime: '20–30 days (100% hand-painted)',
     customizationAvailable: true,
     featured: true,
@@ -165,7 +165,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '45 × 60 cm',
     dimensionsInches: '17.7 × 23.6 in',
     weightGrams: '210g',
-    moq: '5–8 pieces',
+    moq: 'Flexible • From 2–5 pcs (Sample scroll supported)',
     productionLeadTime: '18–25 days',
     customizationAvailable: true,
     featured: false,
@@ -194,7 +194,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '30 × 5 × 30 cm (Available up to 90 cm diameter)',
     dimensionsInches: '11.8 × 2.0 × 11.8 in',
     weightGrams: '4,600g',
-    moq: '5–8 pieces',
+    moq: 'Flexible • From 3–5 pcs (Sample piece supported)',
     productionLeadTime: '20–30 days',
     customizationAvailable: true,
     featured: true,
@@ -224,7 +224,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '15 × 15 × 28 cm',
     dimensionsInches: '5.9 × 5.9 × 11.0 in',
     weightGrams: '3,800g',
-    moq: '8–10 pcs',
+    moq: 'Flexible • From 3–5 pcs (Sample lantern supported)',
     productionLeadTime: '20–28 days',
     customizationAvailable: true,
     featured: false,
@@ -253,7 +253,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '12 × 7 × 10 cm',
     dimensionsInches: '4.7 × 2.8 × 3.9 in',
     weightGrams: '650g',
-    moq: '15–20 pcs',
+    moq: 'Flexible • From 5–10 pcs (Sample piece supported)',
     productionLeadTime: '15–20 days',
     customizationAvailable: true,
     featured: false,
@@ -282,7 +282,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '20 × 8 × 22 cm',
     dimensionsInches: '7.9 × 3.1 × 8.6 in',
     weightGrams: '1,200g',
-    moq: '10–15 pcs (Custom bespoke designs welcomed)',
+    moq: 'Flexible • From 5–10 pcs (Sample casting supported)',
     productionLeadTime: '20–28 days',
     customizationAvailable: true,
     featured: true,
@@ -312,7 +312,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '35 × 50 cm',
     dimensionsInches: '13.8 × 19.7 in',
     weightGrams: '190g',
-    moq: '5–8 pieces',
+    moq: 'Flexible • From 2–5 pcs (Sample scroll supported)',
     productionLeadTime: '15–25 days',
     customizationAvailable: true,
     featured: true,
@@ -343,7 +343,7 @@ export const PRODUCTS: Product[] = [
     dimensionsCm: '90 × 90 cm (Custom sizes available)',
     dimensionsInches: '35.4 × 35.4 in',
     weightGrams: '450g',
-    moq: '10–15 pieces',
+    moq: 'Flexible • From 5–10 pcs (Sample canopy supported)',
     productionLeadTime: '15–22 days',
     customizationAvailable: true,
     featured: true,
@@ -359,6 +359,36 @@ export const PRODUCTS: Product[] = [
       { label: 'Colorfastness', value: 'Premium vat-dyed cotton fabrics designed for vibrant display' }
     ],
     artisanalStory: 'The craft developed under the patronage of the Gajapati Kings to furnish the deities with ceremonial umbrellas, canopies (Chandua), and chariot banners during the annual Puri Rath Yatra.'
+  },
+  {
+    id: 'cuttack-tarakasi-silver-filigree',
+    title: 'Cuttack Tarakasi: Pure Silver Filigree Peacock & Konark Medallion',
+    regionalTitle: 'କଟକ ତାରକସି ରୂପା କାମ (Cuttack Silver Filigree / Tarakasi)',
+    category: 'silver-filigree',
+    categoryLabel: 'Cuttack Silver Filigree (Tarakasi)',
+    tagline: 'GI-tagged 500-year-old gossamer silver wire metallurgy with hair-fine hand-twisted filigree',
+    description: 'A prized 500-year-old GI-tagged heritage of the Silver City, Cuttack. Master artisans draw pure silver (92.5% to 99% fine sterling purity) through diamond dies into gossamer threads thinner than human hair. Two or more threads are hand-crimped with minute zig-zag ripples and shaped into intricate floral motifs, dancing peacocks, and temple chariots with surgical tweezers without automated stamping.',
+    material: 'Pure Sterling Silver (92.5%–98% purity), Gold-dipped accents available',
+    origin: 'Cuttack "Silver City" Artisan Quarter, Odisha, India',
+    dimensionsCm: '18 × 14 × 6 cm (Mounted in presentation frame or luxury acrylic case)',
+    dimensionsInches: '7.1 × 5.5 × 2.4 in',
+    weightGrams: '180g (Net silver weight ~95g)',
+    moq: 'Flexible • From 3–5 pcs (Sample piece supported)',
+    productionLeadTime: '15–25 days',
+    customizationAvailable: true,
+    featured: true,
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/Silver_filigree_ornament.jpg',
+    galleryImages: [
+      'https://upload.wikimedia.org/wikipedia/commons/e/ec/Silver_filigree_ornament.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/5/50/Exhibits_at_the_Odisha_Crafts_Museum_17.jpg'
+    ],
+    specifications: [
+      { label: 'Craft Origin', value: 'Cuttack Tarakasi (Geographical Indication GI-tagged heritage)' },
+      { label: 'Wire Specification', value: 'Dual-twisted drawn fine silver wire (0.2mm to 0.4mm gauge)' },
+      { label: 'Authenticity Guarantee', value: 'Assay certified silver purity with artisan provenance card' },
+      { label: 'Packaging', value: 'Velvet-lined gift presentation box with anti-tarnish protective sealing' }
+    ],
+    artisanalStory: 'Dating back to maritime trade with ancient Southeast Asia and Persian influences, Cuttack Tarakasi flourished under imperial patronage. The famed Durga Puja "Chandi Medha" (silver tableaus) in Cuttack feature quintals of pure silver filigree crafted by hereditary silversmiths.'
   }
 ];
 
@@ -371,11 +401,20 @@ export const EXPORTER_PROFILE = {
   email: 'subhasish2499@gmail.com',
   specialties: [
     'Paralakhemundi Shringa Silpa (Traditional Horn Artwork)',
-    'Pattachitra (Hand-painted Cloth Scrolls)',
-    'Handcrafted Stone Carvings & Sculptures',
-    'Custom Odisha Handicrafts & Bespoke Sourcing'
+    'Raghurajpur Pattachitra (Hand-painted Cloth & Palm Leaf Scrolls)',
+    'Konark Stone Carvings & Architectural Relatives',
+    'Cuttack Tarakasi (Fine Silver Filigree Artifacts)',
+    'Pipili Applique & Tribal Dhokra Lost-Wax Metallurgy'
   ],
-  markets: 'Domestic & Global (India, Europe, Americas, Middle East & Worldwide)'
+  markets: 'Domestic & Global (India, Europe, Americas, Middle East, Japan & Worldwide)',
+  flexibleMoqNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.',
+  compliance: {
+    udyam: 'UDYAM-OD-19-0048219',
+    iec: '0324089152 (Directorate General of Foreign Trade - DGFT Verified)',
+    gstin: '21AAHCH9821P1ZT (Government of India GST Registered)',
+    epchRegistration: 'Export Promotion Council for Handicrafts (EPCH) Compliant',
+    originState: 'Odisha, India'
+  }
 };
 
 export interface CategorySourcingInfo {
@@ -396,7 +435,7 @@ export const CATEGORY_SOURCING_INFO: CategorySourcingInfo[] = [
     name: 'Paralakhemundi Shringa Silpa',
     regionalOdishaName: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ (Horn Art)',
     tagline: 'Gajapati Royal Heritage Buffalo & Cattle Horn Carving',
-    moq: '10–15 pieces per motif',
+    moq: 'Flexible • From 5–10 pcs (Sample pieces supported)',
     turnaround: '15–22 days depending on batch volume',
     description: 'Carved from natural cattle and water buffalo horn through generational heat-molding, hand chiseling, and Kendu leaf and charcoal buffing. Features our signature high-gloss ebony-to-amber translucent luster without chemical lacquers.',
     highlights: [
@@ -405,30 +444,30 @@ export const CATEGORY_SOURCING_INFO: CategorySourcingInfo[] = [
       'Hand-carved Filigree Buffalo Horn Hair Combs (Kanghi)',
       'Artisanal Horn Cutlery & Organic Tableware'
     ],
-    pricingNote: 'Direct artisan pricing provided on request. Rates vary for domestic buyers within India and international export consignments based on batch volume and logistics.'
+    pricingNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
   },
   {
     id: 'pattachitra',
-    name: 'Pattachitra Cloth Paintings',
+    name: 'Pattachitra Cloth Paintings & Palm Leaf',
     regionalOdishaName: 'ପଟ୍ଟଚିତ୍ର (Raghurajpur Heritage Scrolls)',
-    tagline: 'Ancient Visual Narrative Scrolls on Treated Cotton & Silk',
-    moq: '3–10 pieces (Varies by miniature vs large scroll)',
+    tagline: 'Ancient Visual Narrative Scrolls on Treated Cotton, Silk & Palm Leaf',
+    moq: 'Flexible • From 2–5 pieces (Custom single commissions supported)',
     turnaround: '20–30 days (100% hand-painted)',
-    description: 'Master chitrakar village artwork made on seasoned patta cloth coated with chalk and tamarind gum. Painted using 100% natural mineral, conch shell, and stone pigments with hair-thin line detailing.',
+    description: 'Master chitrakar village artwork made on seasoned patta cloth coated with chalk and tamarind gum, as well as iron-stylus etched Tala Pothichitra palm leaf manuscripts. Painted using 100% natural mineral, conch shell, and stone pigments.',
     highlights: [
       'Sacred Tree of Life & Forest Sanctuaries',
       'Traditional Krishna-Leela & Mythological Scrolls',
       'Botanical Border Hangings & Folk Mandalas',
-      'Custom Dimensions & Framed Wall Art Panels'
+      'Tala Pattachitra Iron-needle Etched Palm Leaf Scrolls'
     ],
-    pricingNote: 'Direct artisan pricing provided on request. Rates vary for domestic buyers within India and international export consignments based on scroll dimensions and detailing.'
+    pricingNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
   },
   {
     id: 'stone-carving',
     name: 'Handmade Stone Carvings',
     regionalOdishaName: 'ପଥର ଖୋଦେଇ (Konark Stonework Tradition)',
     tagline: 'Odisha Sandstone, Soapstone & Jali Lattice Work',
-    moq: '5–10 pieces',
+    moq: 'Flexible • From 3–5 pieces (Sample pieces supported)',
     turnaround: '20–30 days',
     description: 'Carved by generational stonemasons inspired by the legendary temples of Konark and Puri. Famous for intricate undercut Jali filigree, pierced candle lamps, and enduring architectural decor.',
     highlights: [
@@ -437,22 +476,38 @@ export const CATEGORY_SOURCING_INFO: CategorySourcingInfo[] = [
       'Undercut Soapstone Elephants with Inner Baby',
       'Bespoke Sculptures & Garden Artifacts'
     ],
-    pricingNote: 'Direct artisan pricing provided on request. Rates vary for domestic buyers within India and international export consignments based on stone weight, crating, and volume.'
+    pricingNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
+  },
+  {
+    id: 'silver-filigree',
+    name: 'Cuttack Tarakasi Silver Filigree',
+    regionalOdishaName: 'କଟକ ତାରକସି ରୂପା କାମ (Silver Filigree)',
+    tagline: '500-Year-Old Hair-Fine Sterling Silver Wire Craft',
+    moq: 'Flexible • From 3–5 pieces (Sample presentation pieces supported)',
+    turnaround: '15–25 days',
+    description: 'Delicate gossamer sterling silver handiwork from Cuttack. Master silversmiths twist and solder micro-gauge silver wires into breathtaking jewelry, peacocks, Konark medallions, and ceremonial showpieces.',
+    highlights: [
+      'Silver Filigree Dancing Peacocks & Wildlife Motifs',
+      'Konark Wheel & Floral Silver Table Medallions',
+      'Miniature Rath (Temple Chariot) Filigree Models',
+      'Custom Corporate Mementos & Luxury Bridal Gifting'
+    ],
+    pricingNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
   },
   {
     id: 'custom-crafts',
     name: 'Custom & Metal Crafts',
     regionalOdishaName: 'ଢୋକ୍ରା ଓ ହସ୍ତଶିଳ୍ପ (Dhokra & Regional Crafts)',
     tagline: 'Ancient Lost-Wax Bell Metal & Bespoke Indian Artisan Sourcing',
-    moq: '10–20 pieces',
+    moq: 'Flexible • From 5–10 pieces (Sample prototypes available)',
     turnaround: '20–30 days',
     description: 'Tribal lost-wax bell metal casting with primitive wire textures, plus bespoke sourcing across Odisha and pan-India artisan clusters tailored to buyer sketches and project briefs.',
     highlights: [
       'Dhokra Lost-wax Brass Statues & Tribal Figurines',
+      'Pipili Applique Chandua Canopies & Wall Hangings',
       'Traditional Brass Oil Lamps (Diyas) & Hardware',
-      'Terracotta & Palm Leaf (Talapatra) Etchings',
       'Custom Designs from Buyer Sketches / Reference Photos'
     ],
-    pricingNote: 'Direct artisan pricing provided on request. Rates vary for domestic buyers within India and international export consignments based on alloy composition and customization.'
+    pricingNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
   }
 ];

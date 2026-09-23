@@ -6,9 +6,9 @@ import {
   TrendingDown, 
   FileCheck2, 
   Workflow, 
-  CheckCircle2, 
   ArrowUpRight,
-  ShieldCheck
+  ShieldCheck,
+  FileText
 } from 'lucide-react';
 import { EXPORTER_PROFILE } from '../data/products';
 
@@ -34,9 +34,9 @@ export const WholesaleCapabilities: React.FC<WholesaleCapabilitiesProps> = ({
     },
     {
       icon: Boxes,
-      title: 'Wholesale Quantities & Low MOQs',
-      highlight: 'From Boutique Trials to Containers',
-      description: 'We welcome both growing boutique stores (starting from trial batches of 10–25 pieces) as well as established wholesalers and distributors requiring recurrent large consignments.'
+      title: 'Flexible MOQs & Sample Shipments',
+      highlight: 'From Boutique Retailers to Large Distributors',
+      description: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
     },
     {
       icon: TrendingDown,
@@ -100,21 +100,18 @@ export const WholesaleCapabilities: React.FC<WholesaleCapabilitiesProps> = ({
                     {cap.description}
                   </p>
                 </div>
-
-                <div className="pt-2 flex items-center gap-1.5 text-xs text-amber-300/90 font-medium">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                  <span>Direct Artisan Guild Quality</span>
-                </div>
               </div>
             );
           })}
         </div>
 
-        {/* Target Audience Bar */}
-        <div className="mt-14 p-6 sm:p-8 rounded-2xl bg-[#1e1610] border border-amber-900/50 text-left">
-          <h3 className="font-display text-lg sm:text-xl font-bold text-amber-100 mb-3">
-            Supplying Partners in India & Worldwide:
-          </h3>
+        {/* Ideal Buyer Profiles */}
+        <div className="mt-12 p-6 sm:p-8 rounded-2xl bg-[#1f1610] border border-amber-900/50 shadow-xl text-left">
+          <div className="flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-wider mb-4">
+            <ShieldCheck className="w-4 h-4" />
+            <span>Serving Diverse Global & Domestic Partners</span>
+          </div>
+
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 text-xs">
             <div className="p-3 rounded-xl bg-[#150f0a] border border-stone-800 text-stone-300">
               <strong className="text-amber-200 block">Retail Stores & Boutiques</strong>
@@ -146,17 +143,26 @@ export const WholesaleCapabilities: React.FC<WholesaleCapabilitiesProps> = ({
             <p className="text-xs text-stone-400">
               Interested in sourcing distinctive handcrafted Indian pieces for your store, showroom, or project?
             </p>
-            <a
-              href={`https://wa.me/${EXPORTER_PROFILE.whatsappRaw}?text=${encodeURIComponent(
-                'Hello Subhasish, I am interested in discussing wholesale terms and customized quotations for Indian handicrafts.'
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold tracking-wide transition-all shadow-md"
-            >
-              <span>Connect on WhatsApp ({EXPORTER_PROFILE.whatsapp})</span>
-              <ArrowUpRight className="w-4 h-4" />
-            </a>
+            <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+              <button
+                onClick={onOpenCatalogueModal}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-950/70 hover:bg-amber-900 border border-amber-700/60 text-amber-200 text-xs font-semibold tracking-wide transition-all shadow-md cursor-pointer"
+              >
+                <FileText className="w-4 h-4 text-amber-400" />
+                <span>Export Catalog (PDF)</span>
+              </button>
+              <a
+                href={`https://wa.me/${EXPORTER_PROFILE.whatsappRaw}?text=${encodeURIComponent(
+                  'Hello Subhasish, I am interested in discussing wholesale terms and customized sourcing for Indian handicrafts.'
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold tracking-wide transition-all shadow-md"
+              >
+                <span>Connect on WhatsApp ({EXPORTER_PROFILE.whatsapp})</span>
+                <ArrowUpRight className="w-4 h-4 text-white" />
+              </a>
+            </div>
           </div>
         </div>
 

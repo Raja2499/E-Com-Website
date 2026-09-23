@@ -12,6 +12,7 @@ import { ArtisanHeritage } from './components/ArtisanHeritage';
 import { ContactSection } from './components/ContactSection';
 import { ProductDetailModal } from './components/ProductDetailModal';
 import { CatalogueDownloadModal } from './components/CatalogueDownloadModal';
+import { PoliciesComplianceModal, PolicyTab } from './components/PoliciesComplianceModal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { Footer } from './components/Footer';
 
@@ -19,6 +20,8 @@ export default function App() {
   const [selectedCategory, setSelectedCategory] = useState<ProductCategory>('all');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [isCatalogueModalOpen, setIsCatalogueModalOpen] = useState(false);
+  const [isPolicyModalOpen, setIsPolicyModalOpen] = useState(false);
+  const [activePolicyTab, setActivePolicyTab] = useState<PolicyTab>('shipping');
 
   const scrollToCatalog = () => {
     const el = document.getElementById('catalog');
@@ -27,25 +30,24 @@ export default function App() {
     }
   };
 
-  const scrollToCategoriesGuide = () => {
-    const el = document.getElementById('categories-guide');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleOpenPolicy = (tab: PolicyTab) => {
+    setActivePolicyTab(tab);
+    setIsPolicyModalOpen(true);
   };
 
   const handleQuickInquiry = (topic: string) => {
-    const url = `https://wa.me/${EXPORTER_PROFILE.whatsappRaw}?text=${encodeURIComponent(
-      `Hello Subhasish, I am interested in wholesale sourcing for ${topic}. Please share your available designs and quotation guide.`
+    const whatsappUrl = `https://wa.me/${EXPORTER_PROFILE.whatsappRaw}?text=${encodeURIComponent(
+      `Hello Subhasish, I would like to inquire about wholesale sourcing for ${topic}.`
     )}`;
-    window.open(url, '_blank');
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
     <div className="min-h-screen bg-[#120d09] text-stone-100 flex flex-col font-sans selection:bg-amber-800 selection:text-white">
-      {/* Navigation Bar - Clean, non-overlapping header with Odisha aesthetic */}
+      {/* Navigation Bar */}
       <Navbar
         onOpenCatalogueModal={() => setIsCatalogueModalOpen(true)}
+        onOpenPolicyModal={handleOpenPolicy}
       />
 
       {/* Main Content */}
@@ -56,7 +58,7 @@ export default function App() {
           onScrollToCatalog={scrollToCatalog}
         />
 
-        {/* 3 Core Odisha Craft Specialties (Horn Art, Pattachitra, Stone Carving) */}
+        {/* Core Odisha Craft Specialties (Horn Art, Pattachitra, Stone Carving, Silver Filigree) */}
         <SpecialtyFocus
           onSelectCategory={(cat) => {
             setSelectedCategory(cat);
@@ -65,17 +67,20 @@ export default function App() {
           onOpenQuickInquiry={handleQuickInquiry}
         />
 
-        {/* Category Sourcing Guide - Sourcing criteria & policies across categories */}
-        <CategoryPricing
-          onOpenQuickInquiry={handleQuickInquiry}
-        />
+        {/* Story and Origin: Deep-dive into Raghurajpur, Paralakhemundi, Cuttack & Konark */}
+        <ArtisanHeritage />
 
-        {/* Handcrafted Masterpieces Showcase (Pure showcase with authentic descriptions & direct inquiry) */}
+        {/* Handcrafted Masterpieces Showcase (Crisp lighting, studio backgrounds, wholesale specs) */}
         <ProductCatalog
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}
           onSelectProduct={setSelectedProduct}
           onOpenCatalogueModal={() => setIsCatalogueModalOpen(true)}
+        />
+
+        {/* Category Sourcing Guide - Sourcing criteria & policies across categories */}
+        <CategoryPricing
+          onOpenQuickInquiry={handleQuickInquiry}
         />
 
         {/* Wholesale Capabilities (Tailored for Domestic & Global Buyers) */}
@@ -86,20 +91,28 @@ export default function App() {
         {/* Logistics, Safe Anti-Shock Packaging & Standards */}
         <ExportCompliance />
 
-        {/* Artisan Heritage & Generational Guilds */}
-        <ArtisanHeritage />
-
-        {/* Direct Contact & Inquiry Form (Subhasish Choudhury, subhasish2499@gmail.com, WhatsApp, No address) */}
+        {/* Direct Contact & Inquiry Form */}
         <ContactSection />
       </main>
 
-      {/* Website Footer */}
-      <Footer />
+      {/* Website Footer with Prominent Trust Signals (Udyam, IEC, GSTIN) and Policy links */}
+      <Footer
+        onOpenPolicyModal={handleOpenPolicy}
+        onOpenCatalogueModal={() => setIsCatalogueModalOpen(true)}
+      />
 
-      {/* Product Detail Specifications Modal (No prices, clean non-overlapping layout) */}
+      {/* Product Detail Specifications Modal */}
       <ProductDetailModal
         product={selectedProduct}
         onClose={() => setSelectedProduct(null)}
+        onRequestExportCatalog={() => setIsCatalogueModalOpen(true)}
+      />
+
+      {/* Export Policies & Legal Compliance Modal (Shipping, Returns, Terms of Trade, Statutory Registrations) */}
+      <PoliciesComplianceModal
+        isOpen={isPolicyModalOpen}
+        initialTab={activePolicyTab}
+        onClose={() => setIsPolicyModalOpen(false)}
       />
 
       {/* Catalogue & Sourcing Guide Modal */}
@@ -108,7 +121,7 @@ export default function App() {
         onClose={() => setIsCatalogueModalOpen(false)}
       />
 
-      {/* Floating Direct WhatsApp Assistance */}
+      {/* Floating Direct WhatsApp Assistance (Clean icon trigger) */}
       <FloatingWhatsApp />
     </div>
   );

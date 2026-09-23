@@ -1,4 +1,4 @@
-export type ProductCategory = 'all' | 'horn-art' | 'pattachitra' | 'stone-carving' | 'custom-crafts';
+export type ProductCategory = 'all' | 'horn-art' | 'pattachitra' | 'stone-carving' | 'silver-filigree' | 'custom-crafts';
 
 export type Currency = 'INR' | 'USD' | 'EUR' | 'GBP';
 
@@ -6,7 +6,7 @@ export interface Product {
   id: string;
   title: string;
   regionalTitle?: string;
-  category: 'horn-art' | 'pattachitra' | 'stone-carving' | 'custom-crafts';
+  category: 'horn-art' | 'pattachitra' | 'stone-carving' | 'silver-filigree' | 'custom-crafts';
   categoryLabel: string;
   tagline: string;
   description: string;

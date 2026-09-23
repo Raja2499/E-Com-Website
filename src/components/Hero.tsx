@@ -44,10 +44,10 @@ export const Hero: React.FC<HeroProps> = ({
           <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
           <span>Direct Master Artisan Guilds • Odisha, India</span>
           <span className="text-amber-500/70">|</span>
-          <span className="text-stone-300 font-normal">Domestic & Worldwide Sourcing</span>
+          <span className="text-stone-300 font-normal">Flexible MOQs & Sample Shipments</span>
         </div>
 
-        {/* Main Headline without curly underline */}
+        {/* Main Headline */}
         <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-amber-50 leading-[1.18]">
           Authentic and Traditional <span className="text-amber-400">Odisha Handicrafts</span>
         </h1>
@@ -75,7 +75,7 @@ export const Hero: React.FC<HeroProps> = ({
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-2 text-xs sm:text-sm text-stone-300">
           <div className="flex items-center gap-2.5">
             <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-            <span>Custom sizes & bulk volumes</span>
+            <span>Flexible MOQs & sample orders</span>
           </div>
           <div className="flex items-center gap-2.5">
             <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
@@ -83,7 +83,7 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
           <div className="flex items-center gap-2.5">
             <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-            <span>Sample dispatch & photos</span>
+            <span>Sample dispatch & video proof</span>
           </div>
           <div className="flex items-center gap-2.5">
             <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
@@ -106,16 +106,16 @@ export const Hero: React.FC<HeroProps> = ({
           <button
             type="button"
             onClick={onOpenCatalogueModal}
-            className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#2b1f15] hover:bg-[#38281b] border border-amber-700/60 text-amber-200 font-semibold text-sm transition-all"
+            className="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#2b1f15] hover:bg-[#38281b] border border-amber-700/60 text-amber-200 font-semibold text-sm transition-all cursor-pointer"
           >
             <FileText className="w-4 h-4 text-amber-400" />
-            <span>Digital Product Catalog & Guide</span>
+            <span>Export Catalog (PDF)</span>
           </button>
 
           <button
             type="button"
             onClick={onScrollToCatalog}
-            className="inline-flex items-center justify-center gap-1.5 px-4 py-3.5 text-stone-300 hover:text-white text-xs font-medium transition-colors"
+            className="inline-flex items-center justify-center gap-1.5 px-4 py-3.5 text-stone-300 hover:text-white text-xs font-medium transition-colors cursor-pointer"
           >
             <span>Browse Products</span>
             <ArrowRight className="w-3.5 h-3.5 text-amber-400" />

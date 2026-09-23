@@ -3,11 +3,11 @@ import {
   Sparkles, 
   MessageSquare, 
   Package, 
-  Clock,
-  ShieldCheck,
-  CheckCircle2,
-  Globe2,
-  Send
+  Clock, 
+  ShieldCheck, 
+  CheckCircle2, 
+  Globe2, 
+  Boxes
 } from 'lucide-react';
 import { CATEGORY_SOURCING_INFO, EXPORTER_PROFILE } from '../data/products';
 
@@ -32,7 +32,7 @@ export const CategoryPricing: React.FC<CategorySourcingProps> = ({
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
+        <div className="text-center max-w-3xl mx-auto space-y-3 mb-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/80 border border-amber-600/40 text-amber-300 text-xs font-semibold tracking-wider uppercase">
             <Sparkles className="w-3.5 h-3.5 text-amber-400" />
             <span>Artisan Craft Clusters</span>
@@ -47,7 +47,36 @@ export const CategoryPricing: React.FC<CategorySourcingProps> = ({
           </p>
         </div>
 
-        {/* 4 Category Sourcing Cards Grid */}
+        {/* Flexible MOQs Banner */}
+        <div className="mb-12 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#241710] via-[#2d1b11] to-[#20140d] border border-amber-800/50 text-left shadow-lg max-w-4xl mx-auto">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="flex items-start gap-3">
+              <div className="w-10 h-10 rounded-xl bg-amber-950/90 border border-amber-700/60 flex items-center justify-center text-amber-300 flex-shrink-0">
+                <Boxes className="w-5 h-5 text-amber-400" />
+              </div>
+              <div className="space-y-0.5">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-amber-400 block">
+                  Flexible MOQs & Sample Shipments
+                </span>
+                <p className="text-xs sm:text-sm text-stone-200 leading-relaxed font-normal">
+                  "We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal."
+                </p>
+              </div>
+            </div>
+
+            <a
+              href={`https://wa.me/${EXPORTER_PROFILE.whatsappRaw}?text=${encodeURIComponent('Hello Subhasish, I would like to inquire about flexible MOQs and sample shipments for Odisha heritage crafts.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-xl bg-[#2a1d15] hover:bg-[#38261c] border border-amber-700/60 text-amber-200 text-xs font-semibold whitespace-nowrap transition-colors self-start sm:self-auto cursor-pointer shadow-sm flex items-center gap-1.5"
+            >
+              <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Inquire on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        {/* Category Sourcing Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
           {CATEGORY_SOURCING_INFO.map((cat) => {
             const whatsappInquiryUrl = `https://wa.me/${EXPORTER_PROFILE.whatsappRaw}?text=${encodeURIComponent(
@@ -126,7 +155,7 @@ export const CategoryPricing: React.FC<CategorySourcingProps> = ({
                     <div className="p-2.5 rounded-lg bg-[#1a130e] border border-stone-800/80">
                       <span className="text-stone-400 flex items-center gap-1 text-[10px] uppercase font-bold">
                         <Package className="w-3 h-3 text-amber-400" />
-                        <span>Typical MOQ</span>
+                        <span>Wholesale MOQ</span>
                       </span>
                       <span className="font-semibold text-stone-200 mt-0.5 block">{cat.moq}</span>
                     </div>
@@ -140,25 +169,17 @@ export const CategoryPricing: React.FC<CategorySourcingProps> = ({
                   </div>
                 </div>
 
-                {/* Sourcing Action Buttons */}
-                <div className="pt-6 mt-4 border-t border-amber-950/70 flex flex-col sm:flex-row gap-3">
+                {/* Sourcing Action Button */}
+                <div className="pt-6 mt-4 border-t border-amber-950/70">
                   <a
                     href={whatsappInquiryUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-colors flex items-center justify-center gap-2 shadow-md shadow-emerald-950/40"
+                    className="w-full py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs transition-colors flex items-center justify-center gap-2 shadow-md shadow-emerald-950/40 cursor-pointer"
                   >
                     <MessageSquare className="w-3.5 h-3.5 fill-white" />
                     <span>Inquire via WhatsApp</span>
                   </a>
-
-                  <button
-                    onClick={() => onOpenQuickInquiry(cat.name)}
-                    className="flex-1 py-2.5 px-4 rounded-xl bg-amber-950/80 hover:bg-amber-900 border border-amber-700/60 text-amber-200 font-semibold text-xs transition-colors flex items-center justify-center gap-1.5"
-                  >
-                    <Send className="w-3.5 h-3.5 text-amber-400" />
-                    <span>Get Rate Quote</span>
-                  </button>
                 </div>
 
               </div>
