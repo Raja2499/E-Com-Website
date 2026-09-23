@@ -13,9 +13,10 @@ export const ArtisanHeritage: React.FC = () => {
           <div className="lg:col-span-5 relative">
             <div className="rounded-2xl overflow-hidden border border-stone-800 shadow-2xl bg-stone-950">
               <img
-                src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80"
-                alt="Indian Master Craftsman at Workshop"
+                src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Pattachitra_Making.jpg"
+                alt="Master Artisan creating traditional Odisha craft"
                 className="w-full h-80 sm:h-96 object-cover"
+                referrerPolicy="no-referrer"
               />
               <div className="p-5 bg-stone-950/90 border-t border-stone-800 text-left">
                 <div className="flex items-center gap-2 text-amber-400 text-xs font-semibold uppercase tracking-wider">

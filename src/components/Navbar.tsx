@@ -77,9 +77,6 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span className="font-display text-lg sm:text-xl font-bold tracking-wider text-amber-100 block">
                 HERITAGE CRAFTS INDIA
               </span>
-              <span className="block text-[11px] tracking-wider uppercase text-amber-400/90 font-medium">
-                Paralakhemundi Shringa Silpa • Pattachitra • Stone Carving
-              </span>
             </div>
           </a>
 

@@ -3,11 +3,10 @@ import {
   Search, 
   Eye, 
   Sparkles, 
-  Ruler, 
-  PackageCheck,
   Download,
   Info,
-  Layers
+  Layers,
+  MapPin
 } from 'lucide-react';
 import { Product, ProductCategory, Currency } from '../types';
 import { PRODUCTS, EXPORTER_PROFILE } from '../data/products';
@@ -134,32 +133,26 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
 
         </div>
 
-        {/* Paralakhemundi Shringa Silpa Dedicated Showcase Highlight Banner */}
-        {selectedCategory === 'horn-art' && (
-          <div className="mb-8 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-amber-950/80 via-[#261b13] to-[#1a120c] border border-amber-700/60 shadow-xl text-left flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div className="space-y-2 max-w-3xl">
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="px-2.5 py-0.5 rounded-full bg-amber-500/20 border border-amber-500/30 text-amber-300 text-[11px] font-bold uppercase tracking-wider">
-                  ଗଜପତି ପାରଳାଖେମୁଣ୍ଡି • Royal Heritage Craft
-                </span>
-                <span className="text-stone-400 text-xs">•</span>
-                <span className="text-amber-400 font-medium text-xs">ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ</span>
-              </div>
-              <h3 className="font-display text-xl font-bold text-amber-100">
-                Paralakhemundi Shringa Silpa (Traditional Horn Artwork)
+        {/* Paralakhemundi Shringa Silpa Card in Catalog */}
+        {(selectedCategory === 'all' || selectedCategory === 'horn-art') && (
+          <div className="mb-8 p-5 sm:p-6 rounded-2xl bg-[#1e1610] border border-amber-800/60 shadow-xl text-left space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] sm:text-[11px] uppercase font-bold tracking-wider text-amber-400">
+                100% Hand-carved Natural Horn
+              </span>
+              <span className="text-[10px] px-2.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800 font-semibold">
+                Sourcing Available
+              </span>
+            </div>
+            <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 className="font-display text-lg sm:text-xl font-bold text-amber-100">
+                Paralakhemundi Shringa Silpa
               </h3>
-              <p className="text-xs text-stone-300 leading-relaxed">
-                Celebrated royal heritage horn craft nurtured under the Gajapati dynasty of Paralakhemundi. Hereditary artisans shape naturally shed Asian water buffalo and cattle horn over open flame, hand-chiseling intricate wildlife, iconic "Sarapanki" crane pairs, and grooming combs, then buffing with dry Kendu leaves and charcoal ash for a deep glass-like natural amber and ebony sheen.
-              </p>
+              <span className="text-xs sm:text-sm text-amber-400 font-medium">ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ</span>
             </div>
-            <div className="flex flex-col sm:flex-row md:flex-col gap-2 flex-shrink-0">
-              <span className="px-3 py-1.5 rounded-xl bg-[#17100b] border border-amber-800/60 text-amber-300 text-[11px] font-semibold text-center">
-                100% Ethical Byproduct
-              </span>
-              <span className="px-3 py-1.5 rounded-xl bg-[#17100b] border border-amber-800/60 text-stone-300 text-[11px] text-center">
-                No Synthetic Lacquers
-              </span>
-            </div>
+            <p className="text-xs sm:text-sm text-stone-300 leading-relaxed">
+              Generational craftsmen hand-carve and buff natural cattle & water buffalo horn to an exquisite natural amber & ebony sheen.
+            </p>
           </div>
         )}
 
@@ -194,6 +187,7 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
                         alt={product.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
+                        referrerPolicy="no-referrer"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#1c1510] via-transparent to-transparent opacity-75" />
                       
@@ -232,25 +226,18 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
                         </p>
                       </div>
 
-                      {/* Technical Specs Attributes with Clean, Non-Overlapping Layout */}
-                      <div className="space-y-2 text-xs text-stone-300 pt-3 border-t border-amber-950/70">
+                      {/* Craft Specs Attributes (Clean Material & Provenance without Dimensions or MOQ) */}
+                      <div className="space-y-1.5 text-xs text-stone-300 pt-3 border-t border-amber-950/70">
                         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5 text-xs">
-                          <span className="text-stone-400 flex items-center gap-1.5 flex-shrink-0 text-[11px] font-medium">
-                            <Ruler className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
-                            <span>Dimensions:</span>
-                          </span>
-                          <span className="font-mono text-xs text-stone-200 sm:text-right break-words">{product.dimensionsCm}</span>
-                        </div>
-                        <div className="flex items-center justify-between gap-2 text-xs">
-                          <span className="text-stone-400 flex items-center gap-1.5 flex-shrink-0 text-[11px] font-medium">
-                            <PackageCheck className="w-3.5 h-3.5 text-amber-400 flex-shrink-0" />
-                            <span>Typical MOQ:</span>
-                          </span>
-                          <span className="font-medium text-stone-200 text-right">{product.moq}</span>
-                        </div>
-                        <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5 text-xs">
-                          <span className="text-stone-400 text-[11px] font-medium flex-shrink-0">Material:</span>
+                          <span className="text-stone-400 text-[11px] font-medium flex-shrink-0">Craft Material:</span>
                           <span className="text-stone-300 sm:text-right text-[11px] line-clamp-1">{product.material}</span>
+                        </div>
+                        <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5 text-xs">
+                          <span className="text-stone-400 flex items-center gap-1 text-[11px] font-medium flex-shrink-0">
+                            <MapPin className="w-3 h-3 text-amber-400 flex-shrink-0" />
+                            <span>Origin:</span>
+                          </span>
+                          <span className="text-stone-300 sm:text-right text-[11px] line-clamp-1">{product.origin}</span>
                         </div>
                       </div>
                     </div>

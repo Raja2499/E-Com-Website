@@ -36,7 +36,7 @@ export const SpecialtyFocus: React.FC<SpecialtyFocusProps> = ({
         'Artisanal Tasting Cutlery & Organic Tableware'
       ],
       heritageNote: 'Centuries-old Gajapati heritage with natural amber-to-ebony translucent marbling. 100% natural, ethically sourced byproduct.',
-      imageUrl: 'https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=800&q=80',
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Horn_craft.jpg',
       actionText: 'View Paralakhemundi Shringa Silpa'
     },
     {
@@ -53,7 +53,7 @@ export const SpecialtyFocus: React.FC<SpecialtyFocusProps> = ({
         'Custom Sized Wall Tapestries for Interior Decor'
       ],
       heritageNote: 'Decades of color vibrancy using conch shell, cinnabar, and natural stone pigments. 100% handmade visual storytelling.',
-      imageUrl: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80',
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Pattachitra_09.jpg',
       actionText: 'View Pattachitra Collection'
     },
     {
@@ -70,7 +70,7 @@ export const SpecialtyFocus: React.FC<SpecialtyFocusProps> = ({
         'Custom Garden & Luxury Interior Sculptures'
       ],
       heritageNote: 'Inspired by 1,000-year-old temple architecture of Konark and Puri. Weather-resistant, authentic, and tactile.',
-      imageUrl: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80',
+      imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/78/Konark_Sun_Temple_Wheel.jpg',
       actionText: 'View Stone Carvings'
     }
   ];
@@ -107,6 +107,7 @@ export const SpecialtyFocus: React.FC<SpecialtyFocusProps> = ({
                   src={spec.imageUrl}
                   alt={spec.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#211711] via-[#211711]/40 to-transparent" />
                 <span className="absolute top-4 left-4 px-2.5 py-1 rounded-full bg-stone-900/90 border border-amber-500/40 text-amber-300 text-[10px] font-bold tracking-wider uppercase backdrop-blur-sm">

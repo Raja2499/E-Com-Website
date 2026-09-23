@@ -2,10 +2,7 @@ import React, { useState } from 'react';
 import { 
   X, 
   MessageSquare, 
-  Ruler, 
-  Package, 
   Award,
-  Clock,
   Sparkles,
   Globe2,
   Mail
@@ -72,6 +69,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   src={activeImage}
                   alt={product.title}
                   className="w-full h-full object-cover"
+                  referrerPolicy="no-referrer"
                   onError={(e) => {
                     // Fallback to primary product image if sub-image fails
                     if (activeImage !== product.imageUrl) {
@@ -92,7 +90,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                         activeImage === img ? 'border-amber-500 scale-95 shadow-md' : 'border-stone-800 opacity-60 hover:opacity-100'
                       }`}
                     >
-                      <img src={img} alt="" className="w-full h-full object-cover" />
+                      <img src={img} alt="" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                     </button>
                   ))}
                 </div>
@@ -110,7 +108,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               </div>
             </div>
 
-            {/* Right: Technical Specs & Dimension Details */}
+            {/* Right: Technical Specs & Artisan Details */}
             <div className="lg:col-span-6 space-y-5">
               
               {/* Product Titles & Description */}
@@ -140,33 +138,6 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 <div className="pt-2 border-t border-amber-950/70 flex flex-wrap gap-2 text-[11px] text-amber-300/90 font-medium">
                   <span className="px-2 py-0.5 rounded bg-amber-950/80 border border-amber-800/40">✓ Pan-India Domestic Delivery</span>
                   <span className="px-2 py-0.5 rounded bg-amber-950/80 border border-amber-800/40">✓ International Courier & Cargo</span>
-                </div>
-              </div>
-
-              {/* Physical Dimensions & Sizing (Fixed Layout: Stacked cards with clear labels) */}
-              <div className="space-y-2.5">
-                <h4 className="text-xs font-semibold text-stone-300 uppercase tracking-wider flex items-center gap-1.5">
-                  <Ruler className="w-3.5 h-3.5 text-amber-400" />
-                  <span>Dimensions & Physical Specifications</span>
-                </h4>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
-                  <div className="p-3 rounded-xl bg-[#17110c] border border-stone-800/90 space-y-1">
-                    <span className="text-stone-400 text-[10px] uppercase font-semibold block">Dimensions (Metric)</span>
-                    <span className="text-stone-200 font-mono font-medium text-xs break-words">{product.dimensionsCm}</span>
-                  </div>
-                  <div className="p-3 rounded-xl bg-[#17110c] border border-stone-800/90 space-y-1">
-                    <span className="text-stone-400 text-[10px] uppercase font-semibold block">Dimensions (Imperial)</span>
-                    <span className="text-stone-200 font-mono font-medium text-xs break-words">{product.dimensionsInches}</span>
-                  </div>
-                  <div className="p-3 rounded-xl bg-[#17110c] border border-stone-800/90 space-y-1">
-                    <span className="text-stone-400 text-[10px] uppercase font-semibold block">Approximate Weight</span>
-                    <span className="text-stone-200 font-mono font-medium text-xs">{product.weightGrams}</span>
-                  </div>
-                  <div className="p-3 rounded-xl bg-[#17110c] border border-stone-800/90 space-y-1">
-                    <span className="text-stone-400 text-[10px] uppercase font-semibold block">Wholesale MOQ</span>
-                    <span className="text-stone-200 font-medium text-xs">{product.moq}</span>
-                  </div>
                 </div>
               </div>
 

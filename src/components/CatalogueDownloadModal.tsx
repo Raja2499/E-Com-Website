@@ -71,6 +71,27 @@ export const CatalogueDownloadModal: React.FC<CatalogueDownloadModalProps> = ({
             </p>
           </div>
 
+          {/* Paralakhemundi Shringa Silpa Card */}
+          <div className="p-4 rounded-xl bg-[#1e1610] border border-amber-800/60 shadow-lg space-y-2 text-left">
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] uppercase font-bold tracking-wider text-amber-400">
+                100% Hand-carved Natural Horn
+              </span>
+              <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800 font-semibold">
+                Sourcing Available
+              </span>
+            </div>
+            <div className="flex flex-wrap items-baseline justify-between gap-2">
+              <h4 className="font-display text-sm font-bold text-amber-100">
+                Paralakhemundi Shringa Silpa
+              </h4>
+              <span className="text-[11px] text-amber-400 font-medium">ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ</span>
+            </div>
+            <p className="text-[11px] text-stone-300 leading-relaxed">
+              Generational craftsmen hand-carve and buff natural cattle & water buffalo horn to an exquisite natural amber & ebony sheen.
+            </p>
+          </div>
+
           {/* Category Sourcing Schedule Table */}
           <div>
             <h4 className="text-xs font-bold uppercase tracking-wider text-amber-400 mb-3">

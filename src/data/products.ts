@@ -18,10 +18,10 @@ export const PRODUCTS: Product[] = [
     productionLeadTime: '15–20 days',
     customizationAvailable: true,
     featured: true,
-    imageUrl: 'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=80',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Horn_craft.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80'
+      'https://upload.wikimedia.org/wikipedia/commons/8/84/Horn_craft.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/f/f6/Decorative_ishes_made_of_animal_horn_at_Odisha_Crafts_Museum%2C_Bhubaneswar%2C_Odisha%2C_India.jpg'
     ],
     specifications: [
       { label: 'Craft Discipline', value: 'Paralakhemundi Shringa Silpa (Gajapati Horn Craft of Odisha)' },
@@ -49,10 +49,10 @@ export const PRODUCTS: Product[] = [
     productionLeadTime: '15–22 days',
     customizationAvailable: true,
     featured: true,
-    imageUrl: 'https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=900&q=80',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/84/Horn_craft.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1582562124811-c09040d0a901?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=900&q=80'
+      'https://upload.wikimedia.org/wikipedia/commons/8/84/Horn_craft.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/f/f6/Decorative_ishes_made_of_animal_horn_at_Odisha_Crafts_Museum%2C_Bhubaneswar%2C_Odisha%2C_India.jpg'
     ],
     specifications: [
       { label: 'Historic Design', value: 'Authentic 1900s Sarapanki court commission pattern' },
@@ -79,10 +79,10 @@ export const PRODUCTS: Product[] = [
     productionLeadTime: '10–15 days',
     customizationAvailable: true,
     featured: false,
-    imageUrl: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Decorative_ishes_made_of_animal_horn_at_Odisha_Crafts_Museum%2C_Bhubaneswar%2C_Odisha%2C_India.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=900&q=80'
+      'https://upload.wikimedia.org/wikipedia/commons/f/f6/Decorative_ishes_made_of_animal_horn_at_Odisha_Crafts_Museum%2C_Bhubaneswar%2C_Odisha%2C_India.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/8/84/Horn_craft.jpg'
     ],
     specifications: [
       { label: 'Functional Feature', value: 'Natural keratin composition; 100% anti-static scalp stimulation' },
@@ -109,9 +109,10 @@ export const PRODUCTS: Product[] = [
     productionLeadTime: '12–18 days',
     customizationAvailable: true,
     featured: false,
-    imageUrl: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=80',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/f/f6/Decorative_ishes_made_of_animal_horn_at_Odisha_Crafts_Museum%2C_Bhubaneswar%2C_Odisha%2C_India.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=80'
+      'https://upload.wikimedia.org/wikipedia/commons/f/f6/Decorative_ishes_made_of_animal_horn_at_Odisha_Crafts_Museum%2C_Bhubaneswar%2C_Odisha%2C_India.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/8/84/Horn_craft.jpg'
     ],
     specifications: [
       { label: 'Food Contact', value: 'Treated with food-safe pure beeswax; zero synthetic resins' },
@@ -137,10 +138,11 @@ export const PRODUCTS: Product[] = [
     productionLeadTime: '20–30 days (100% hand-painted)',
     customizationAvailable: true,
     featured: true,
-    imageUrl: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=900&q=80',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Pattachitra_09.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=900&q=80'
+      'https://upload.wikimedia.org/wikipedia/commons/1/1e/Pattachitra_09.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/4/41/Pattachitra_10.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/6/67/Odia_palm_leaf_manuscript.JPG'
     ],
     specifications: [
       { label: 'Authenticity Tag', value: 'Geographical Indication (GI) Certified Odisha Pattachitra' },
@@ -167,10 +169,10 @@ export const PRODUCTS: Product[] = [
     productionLeadTime: '18–25 days',
     customizationAvailable: true,
     featured: false,
-    imageUrl: 'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=900&q=80',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/7d/Odisha_Pattachitara_Depicting_Unconditional_Love_between_Radha_Krushna.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=900&q=80'
+      'https://upload.wikimedia.org/wikipedia/commons/7/7d/Odisha_Pattachitara_Depicting_Unconditional_Love_between_Radha_Krushna.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/8/81/Easy_Pattachitra_of_Lord_Jagarnath.jpg'
     ],
     specifications: [
       { label: 'Brushwork Technique', value: 'Mota Kala (master outline) and Saru Kala (hair-line detailing)' },
@@ -196,10 +198,10 @@ export const PRODUCTS: Product[] = [
     productionLeadTime: '20–30 days',
     customizationAvailable: true,
     featured: true,
-    imageUrl: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=80',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/7/78/Konark_Sun_Temple_Wheel.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=80',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80'
+      'https://upload.wikimedia.org/wikipedia/commons/7/78/Konark_Sun_Temple_Wheel.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/e/ee/Stone_work_at_Konark_Orissa_India.jpg'
     ],
     specifications: [
       { label: 'Inspiration', value: 'UNESCO World Heritage 13th-century Sun Temple of Konark' },
@@ -226,9 +228,10 @@ export const PRODUCTS: Product[] = [
     productionLeadTime: '20–28 days',
     customizationAvailable: true,
     featured: false,
-    imageUrl: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=80',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/ee/Stone_work_at_Konark_Orissa_India.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=900&q=80'
+      'https://upload.wikimedia.org/wikipedia/commons/e/ee/Stone_work_at_Konark_Orissa_India.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/7/78/Konark_Sun_Temple_Wheel.jpg'
     ],
     specifications: [
       { label: 'Technique', value: 'Manual hollow boring and pierced lattice work (Jali carving)' },
@@ -254,9 +257,10 @@ export const PRODUCTS: Product[] = [
     productionLeadTime: '15–20 days',
     customizationAvailable: true,
     featured: false,
-    imageUrl: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/a/a2/Sculptures_in_the_Odisha_State_Museum1.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80'
+      'https://upload.wikimedia.org/wikipedia/commons/a/a2/Sculptures_in_the_Odisha_State_Museum1.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/e/ee/Stone_work_at_Konark_Orissa_India.jpg'
     ],
     specifications: [
       { label: 'Carving Feat', value: 'Blind internal undercut sculpting through 4mm side perforations' },
@@ -282,9 +286,11 @@ export const PRODUCTS: Product[] = [
     productionLeadTime: '20–28 days',
     customizationAvailable: true,
     featured: true,
-    imageUrl: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80',
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/28/Dhokra_figurines_by_Dharua_women_of_Odisha.jpg',
     galleryImages: [
-      'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=900&q=80'
+      'https://upload.wikimedia.org/wikipedia/commons/2/28/Dhokra_figurines_by_Dharua_women_of_Odisha.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/b/b1/A_Dhokra_figurine_made_by_a_Dharua_tribe.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/7/77/Metal_objects_at_Odisha_Crafts_Museum_04.jpg'
     ],
     specifications: [
       { label: 'Casting Process', value: 'Traditional Cire-perdue (lost wax) using clay and beeswax' },
@@ -292,6 +298,67 @@ export const PRODUCTS: Product[] = [
       { label: 'Uniqueness', value: 'Every clay mold is broken during casting, ensuring no two pieces are identical' }
     ],
     artisanalStory: 'Dhokra casting is one of the oldest living metallurgical traditions in human history, tracing its lineage directly to the Dancing Girl of Mohenjo-daro (c. 2500 BCE). Odisha tribal families keep this ancient metallurgy alive in rural forest settlements.'
+  },
+  {
+    id: 'tala-pattachitra-palm-leaf',
+    title: 'Traditional Odisha Tala Pattachitra: Etched Palm Leaf Scroll',
+    regionalTitle: 'ଓଡ଼ିଶା ତାଳ ପଟ୍ଟଚିତ୍ର / ପୋଥିଚିତ୍ର (Tala Pothichitra)',
+    category: 'pattachitra',
+    categoryLabel: 'Pattachitra Cloth Paintings',
+    tagline: 'Precision iron-stylus engraving on seasoned palmyra leaves with natural lampblack ink',
+    description: 'An ancient manuscript art form practiced by Chitrakars of Raghurajpur. Dried palmyra palm leaves are soaked in turmeric water, seasoned, cut to uniform ribbons, and etched by hand using an iron needle stylus ("Lekhani"). Natural lampblack (kajal) and bean juice extract are rubbed across the incisions to bring the fine linework vividly to life.',
+    material: 'Seasoned Palm Leaf (Borassus flabellifer), Organic Lampblack Ink, Cotton Binding',
+    origin: 'Raghurajpur Heritage Craft Village & Puri, Odisha, India',
+    dimensionsCm: '35 × 50 cm',
+    dimensionsInches: '13.8 × 19.7 in',
+    weightGrams: '190g',
+    moq: '5–8 pieces',
+    productionLeadTime: '15–25 days',
+    customizationAvailable: true,
+    featured: true,
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Pothichitra.jpg',
+    galleryImages: [
+      'https://upload.wikimedia.org/wikipedia/commons/c/ca/Pothichitra.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/6/67/Odia_palm_leaf_manuscript.JPG',
+      'https://upload.wikimedia.org/wikipedia/commons/c/cc/Pattachitra_Making.jpg'
+    ],
+    specifications: [
+      { label: 'Craft Discipline', value: 'Tala Pattachitra / Pothichitra (GI-registered heritage of Odisha)' },
+      { label: 'Stylus Tool', value: 'Sharp hardened steel Lekhani needle with organic vegetable ink rub' },
+      { label: 'Preservation', value: 'Naturally insect-resistant treated palm leaves enduring for generations' },
+      { label: 'Format Options', value: 'Folding manuscript book, hanging vertical scroll, or framed wall panel' }
+    ],
+    artisanalStory: 'Palm leaf etching preceded paper in ancient Odisha, used for recording sacred astronomical treatises and the Gita Govinda. A single miscalculation with the stylus cannot be erased, demanding immaculate concentration.'
+  },
+  {
+    id: 'custom-pipili-applique',
+    title: 'Pipili Chandua: Traditional Odisha Appliqué Patchwork Textile',
+    regionalTitle: 'ପିପିଲି ଚାନ୍ଦୁଆ (Pipili Appliqué Craft)',
+    category: 'custom-crafts',
+    categoryLabel: 'Traditional & Custom Crafts',
+    tagline: 'GI-tagged colorful stitched canopies, tapestries & lampshades with hand-embroidered mirrorwork',
+    description: 'A historic craft originating from the 12th-century Jagannath Temple traditions in Pipili. Master artisans cut vibrantly dyed cotton fabrics into stylized motifs of elephants, peacocks, trees, and mandalas, sewing them with precision chain stitches onto contrasting backdrops with embroidered mirrorwork ("Tarasa").',
+    material: 'Hand-dyed 100% Cotton, Glass Mirror Accents, Durable Embroidered Threading',
+    origin: 'Pipili Crafts Village, Puri District, Odisha, India',
+    dimensionsCm: '90 × 90 cm (Custom sizes available)',
+    dimensionsInches: '35.4 × 35.4 in',
+    weightGrams: '450g',
+    moq: '10–15 pieces',
+    productionLeadTime: '15–22 days',
+    customizationAvailable: true,
+    featured: true,
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/82/Pipili_handicrafts.jpg',
+    galleryImages: [
+      'https://upload.wikimedia.org/wikipedia/commons/8/82/Pipili_handicrafts.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/e/ed/Pipli_Craftsman_at_Work_%2825355371872%29.jpg'
+    ],
+    specifications: [
+      { label: 'Craft Origin', value: 'Pipili Appliqué Work (Geographical Indication GI tagged)' },
+      { label: 'Stitchwork', value: 'Fine manual chain stitch, buttonhole stitch, and mirror embroidery' },
+      { label: 'Use Cases', value: 'Wall hangings, decorative canopies, lampshades, resort & festive decor' },
+      { label: 'Colorfastness', value: 'Premium vat-dyed cotton fabrics designed for vibrant display' }
+    ],
+    artisanalStory: 'The craft developed under the patronage of the Gajapati Kings to furnish the deities with ceremonial umbrellas, canopies (Chandua), and chariot banners during the annual Puri Rath Yatra.'
   }
 ];
 
