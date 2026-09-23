@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { 
-  Phone, 
-  Mail, 
   MessageSquare, 
   FileText, 
-  Globe2, 
   Menu, 
   X, 
   Sparkles
@@ -28,37 +25,16 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header className="sticky top-0 z-40 bg-[#16120e] text-stone-100 shadow-xl border-b border-amber-900/40">
       {/* Top Announcements Bar */}
       <div className="bg-[#241710] border-b border-amber-900/30 text-amber-200/90 text-xs py-2 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
+        <div className="max-w-7xl mx-auto flex items-center justify-center text-center">
           
-          {/* Left badge & announcement */}
-          <div className="flex flex-wrap items-center justify-center md:justify-start gap-2">
+          {/* Badge & announcement */}
+          <div className="flex flex-wrap items-center justify-center gap-2">
             <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30">
               ହସ୍ତଶିଳ୍ପ • ODISHA HERITAGE
             </span>
             <span className="text-stone-300 text-xs tracking-wide">
               Direct Artisan Sourcing • Domestic (India) & International Consignments
             </span>
-          </div>
-
-          {/* Right Direct Contacts */}
-          <div className="flex items-center gap-3 sm:gap-5 text-xs">
-            <a 
-              href={whatsappDirectLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 hover:text-emerald-300 transition-colors text-emerald-400 font-semibold"
-            >
-              <MessageSquare className="w-3.5 h-3.5" />
-              <span>WhatsApp: {EXPORTER_PROFILE.whatsapp}</span>
-            </a>
-            <span className="text-amber-900/60 hidden sm:inline">|</span>
-            <a 
-              href={`mailto:${EXPORTER_PROFILE.email}`}
-              className="flex items-center gap-1.5 hover:text-amber-300 transition-colors text-stone-300 font-medium"
-            >
-              <Mail className="w-3.5 h-3.5 text-amber-400" />
-              <span>{EXPORTER_PROFILE.email}</span>
-            </a>
           </div>
 
         </div>
@@ -207,7 +183,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-emerald-600 text-white font-bold text-xs shadow-md"
             >
               <MessageSquare className="w-4 h-4" />
-              <span>WhatsApp Chat ({EXPORTER_PROFILE.whatsapp})</span>
+              <span>WhatsApp Chat</span>
             </a>
           </div>
         </div>

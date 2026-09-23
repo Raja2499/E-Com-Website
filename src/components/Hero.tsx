@@ -3,11 +3,7 @@ import {
   MessageSquare, 
   ArrowRight, 
   CheckCircle2, 
-  FileText,
-  Award,
-  Layers,
-  ShieldCheck,
-  Globe2
+  FileText
 } from 'lucide-react';
 import { EXPORTER_PROFILE } from '../data/products';
 
@@ -104,7 +100,7 @@ export const Hero: React.FC<HeroProps> = ({
             className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm shadow-xl shadow-emerald-950/60 transition-all hover:scale-[1.02] cursor-pointer"
           >
             <MessageSquare className="w-4 h-4 fill-white" />
-            <span>Chat on WhatsApp ({EXPORTER_PROFILE.whatsapp})</span>
+            <span>Chat on WhatsApp</span>
           </a>
 
           <button
@@ -140,15 +136,6 @@ export const Hero: React.FC<HeroProps> = ({
             <span className="font-display text-xl font-bold text-amber-300 block">PAN-India</span>
             <span className="text-[11px] text-stone-400 uppercase tracking-wider block">& Worldwide Dispatch</span>
           </div>
-        </div>
-
-        {/* Direct Official Contact Strip */}
-        <div className="pt-3 text-xs text-stone-400 flex flex-wrap items-center gap-x-4 gap-y-1.5 border-t border-amber-950/60">
-          <span>Official Email: <strong className="text-amber-200">{EXPORTER_PROFILE.email}</strong></span>
-          <span className="text-stone-600 hidden sm:inline">•</span>
-          <span>Direct WhatsApp: <strong className="text-emerald-400">{EXPORTER_PROFILE.whatsapp}</strong></span>
-          <span className="text-stone-600 hidden sm:inline">•</span>
-          <span>Contact Person: <strong className="text-stone-200">{EXPORTER_PROFILE.name}</strong></span>
         </div>
       </div>
     </section>
