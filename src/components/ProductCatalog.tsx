@@ -4,12 +4,10 @@ import {
   Eye, 
   Sparkles, 
   Download,
-  MapPin, 
-  MessageSquare, 
-  Boxes
+  MapPin
 } from 'lucide-react';
 import { Product, ProductCategory, Currency } from '../types';
-import { PRODUCTS, EXPORTER_PROFILE } from '../data/products';
+import { PRODUCTS } from '../data/products';
 
 interface ProductCatalogProps {
   currentCurrency?: Currency;
@@ -28,31 +26,26 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
   const [searchQuery, setSearchQuery] = useState('');
 
   const categories: { id: ProductCategory; label: string; count: number }[] = [
-    { id: 'all', label: 'All Heritage Crafts', count: PRODUCTS.length },
+    { id: 'all', label: 'All Products', count: PRODUCTS.length },
     { 
       id: 'horn-art', 
-      label: 'Paralakhemundi Shringa Silpa', 
+      label: 'Horn Artwork', 
       count: PRODUCTS.filter(p => p.category === 'horn-art').length 
     },
     { 
-      id: 'pattachitra', 
-      label: 'Pattachitra & Palm Leaf', 
-      count: PRODUCTS.filter(p => p.category === 'pattachitra').length 
+      id: 'pattachitra-cloth', 
+      label: 'Pattachitra Cloth Scrolls', 
+      count: PRODUCTS.filter(p => p.category === 'pattachitra-cloth').length 
+    },
+    { 
+      id: 'palm-leaf', 
+      label: 'Palm Leaf', 
+      count: PRODUCTS.filter(p => p.category === 'palm-leaf').length 
     },
     { 
       id: 'stone-carving', 
-      label: 'Konark Stone Carvings', 
+      label: 'Stone Carvings', 
       count: PRODUCTS.filter(p => p.category === 'stone-carving').length 
-    },
-    { 
-      id: 'silver-filigree', 
-      label: 'Cuttack Silver Filigree', 
-      count: PRODUCTS.filter(p => p.category === 'silver-filigree').length 
-    },
-    { 
-      id: 'custom-crafts', 
-      label: 'Tribal & Regional Crafts', 
-      count: PRODUCTS.filter(p => p.category === 'custom-crafts').length 
     }
   ];
 
@@ -68,225 +61,193 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
   });
 
   return (
-    <section id="catalog" className="py-20 bg-[#140e0a] text-stone-100 border-b border-amber-950/60">
+    <section id="catalog" className="py-16 sm:py-24 bg-white text-stone-900 border-b border-stone-200 scroll-mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 text-left">
           <div className="space-y-3 max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/80 border border-amber-700/50 text-amber-300 text-xs font-semibold uppercase tracking-wider">
-              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
-              <span>Odisha Artisanal Archive</span>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-xs font-semibold uppercase tracking-wider">
+              <Sparkles className="w-3.5 h-3.5 text-amber-700" />
+              <span>Complete Craft Collection</span>
             </div>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-amber-50">
-              Mastercrafted Product Presentation & Portfolio
+            <h2 className="font-display text-3xl sm:text-4xl font-bold tracking-tight text-stone-950">
+              All Handcrafted Masterpieces
             </h2>
-            <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-              Explore authentic masterworks sculpted, painted, etched, and woven by generational guilds across Odisha. 
-              Featuring high-definition visual captures highlighting natural horn marbleization, crisp mineral pigments on patta cloth, 
-              undercut sandstone latticework, and gossamer silver filigree.
+            <p className="text-stone-600 text-sm sm:text-base leading-relaxed">
+              Browse our complete catalog of authentic Odisha crafts. Whether you are an 
+              <strong className="text-stone-900 font-semibold"> individual customer ordering a single masterpiece</strong> or a 
+              <strong className="text-stone-900 font-semibold"> wholesale supplier looking for bulk consignments</strong>, both can easily view details and place orders here.
             </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
             <button
+              type="button"
               onClick={onOpenCatalogueModal}
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-amber-900/40 hover:bg-amber-800/60 border border-amber-600/60 text-amber-200 text-xs font-semibold transition-all shadow-md cursor-pointer"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-stone-100 hover:bg-stone-200 border border-stone-300 text-stone-800 text-xs font-semibold transition-all shadow-2xs cursor-pointer"
             >
-              <Download className="w-4 h-4 text-amber-400" />
-              <span>Export Catalog (PDF)</span>
+              <Download className="w-4 h-4 text-amber-800" />
+              <span>Download PDF Catalog</span>
             </button>
           </div>
         </div>
 
-        {/* Prominent Flexible MOQs Banner */}
-        <div className="mb-10 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-[#241710] via-[#2d1b11] to-[#20140d] border border-amber-800/50 text-left shadow-lg">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-            <div className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-xl bg-amber-950/90 border border-amber-700/60 flex items-center justify-center text-amber-300 flex-shrink-0">
-                <Boxes className="w-5 h-5 text-amber-400" />
-              </div>
-              <div className="space-y-0.5">
-                <span className="text-[11px] font-bold uppercase tracking-wider text-amber-400 block">
-                  B2B Trade Commitment • Flexible Minimum Orders
-                </span>
-                <p className="text-xs sm:text-sm text-stone-200 leading-relaxed font-normal">
-                  "We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal."
-                </p>
-              </div>
-            </div>
-
-            <a
-              href={`https://wa.me/${EXPORTER_PROFILE.whatsappRaw}?text=${encodeURIComponent('Hello Subhasish, I am interested in discussing flexible MOQs and sample shipments for Odisha handicrafts.')}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 rounded-xl bg-[#2a1d15] hover:bg-[#38261c] border border-amber-700/60 text-amber-200 text-xs font-semibold whitespace-nowrap transition-colors self-start sm:self-auto cursor-pointer shadow-sm flex items-center gap-1.5"
-            >
-              <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Inquire via WhatsApp</span>
-            </a>
-          </div>
-        </div>
-
-        {/* Filter Bar & Search */}
+        {/* Filter Tabs & Search Bar */}
         <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-4 mb-8">
-          
           {/* Category Tabs */}
-          <div className="flex flex-wrap gap-2">
-            {categories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => onSelectCategory(cat.id)}
-                className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-2 cursor-pointer ${
-                  selectedCategory === cat.id
-                    ? 'bg-amber-600 text-white shadow-md shadow-amber-950/40'
-                    : 'bg-[#221812] text-stone-300 hover:bg-[#2e2018] border border-amber-950/80'
-                }`}
-              >
-                <span>{cat.label}</span>
-                <span className={`px-1.5 py-0.2 rounded-full text-[10px] ${
-                  selectedCategory === cat.id ? 'bg-amber-800 text-white' : 'bg-[#18110b] text-stone-400'
-                }`}>
-                  {cat.count}
-                </span>
-              </button>
-            ))}
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-2 lg:pb-0 scrollbar-none">
+            {categories.map((cat) => {
+              const isSelected = selectedCategory === cat.id;
+              return (
+                <button
+                  key={cat.id}
+                  type="button"
+                  onClick={() => onSelectCategory(cat.id)}
+                  className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all whitespace-nowrap cursor-pointer flex items-center gap-1.5 ${
+                    isSelected
+                      ? 'bg-stone-950 text-amber-100 shadow-xs'
+                      : 'bg-stone-100 hover:bg-stone-200 text-stone-700 border border-stone-200'
+                  }`}
+                >
+                  <span>{cat.label}</span>
+                  <span
+                    className={`px-1.5 py-0.5 rounded-full text-[10px] ${
+                      isSelected
+                        ? 'bg-amber-800 text-white'
+                        : 'bg-stone-200 text-stone-600'
+                    }`}
+                  >
+                    {cat.count}
+                  </span>
+                </button>
+              );
+            })}
           </div>
 
-          {/* Search Input */}
-          <div className="relative min-w-[280px]">
-            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" />
+          {/* Search Bar */}
+          <div className="relative w-full lg:w-72">
+            <Search className="w-4 h-4 text-stone-400 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Search motifs, crafts, or materials..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-[#1c140e] border border-amber-950 focus:border-amber-500 focus:outline-none text-xs text-stone-100 placeholder-stone-400"
+              placeholder="Search products by craft, material..."
+              className="w-full pl-9 pr-4 py-2 rounded-xl bg-stone-50 border border-stone-300 text-stone-900 placeholder:text-stone-400 text-xs focus:outline-hidden focus:border-amber-700 focus:bg-white transition-all shadow-2xs"
             />
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-stone-400 hover:text-stone-700 text-xs"
+              >
+                Clear
+              </button>
+            )}
           </div>
-
         </div>
 
         {/* Products Grid */}
         {filteredProducts.length === 0 ? (
-          <div className="py-16 text-center text-stone-400 space-y-3 bg-[#1c140e] rounded-2xl border border-amber-950">
-            <p className="text-base font-medium">No handcrafted pieces matched your search criteria.</p>
+          <div className="text-center py-16 bg-[#faf7f2] rounded-3xl border border-dashed border-stone-300 max-w-lg mx-auto p-8 space-y-3">
+            <p className="text-stone-600 text-sm font-medium">
+              No products found matching "{searchQuery}".
+            </p>
             <button
+              type="button"
               onClick={() => {
-                onSelectCategory('all');
                 setSearchQuery('');
+                onSelectCategory('all');
               }}
-              className="px-4 py-2 rounded-xl bg-amber-900/60 hover:bg-amber-800 text-amber-200 text-xs font-semibold transition-colors"
+              className="px-4 py-2 rounded-xl bg-stone-900 text-white text-xs font-semibold hover:bg-stone-800 transition-colors cursor-pointer"
             >
               Reset Filters
             </button>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-left">
-            {filteredProducts.map((product) => (
-              <div
-                key={product.id}
-                onClick={() => onSelectProduct(product)}
-                className="group rounded-2xl bg-[#1d1510] border border-amber-950/80 hover:border-amber-600/60 overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-amber-950/30 transition-all duration-300 flex flex-col justify-between cursor-pointer"
-              >
-                <div>
-                  {/* Photography: Clean Studio Image Presentation */}
-                  <div className="relative aspect-4/3 overflow-hidden bg-gradient-to-b from-stone-900 to-[#140e0b]">
-                    <img
-                      src={product.imageUrl}
-                      alt={product.title}
-                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                      referrerPolicy="no-referrer"
-                    />
-
-                    {/* Regional Odia Heritage Badge */}
-                    <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
-                      <span className="px-2.5 py-1 rounded-md bg-stone-900/90 border border-amber-800/60 text-amber-300 text-[10px] font-bold uppercase tracking-wider backdrop-blur-sm shadow-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+            {filteredProducts.map((product) => {
+              return (
+                <div
+                  key={product.id}
+                  className="bg-white rounded-2xl border border-stone-200 hover:border-amber-400 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between group cursor-pointer"
+                  onClick={() => onSelectProduct(product)}
+                >
+                  {/* Product Card Top: Image & Badges */}
+                  <div>
+                    <div className="relative aspect-16/10 sm:aspect-16/10 overflow-hidden bg-stone-100">
+                      <img
+                        src={product.imageUrl}
+                        alt={product.title}
+                        loading="lazy"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        referrerPolicy="no-referrer"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-stone-950/70 via-transparent to-transparent opacity-80" />
+                      
+                      {/* Category Tag */}
+                      <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-white/95 text-stone-900 text-[11px] font-bold tracking-wider uppercase shadow-xs">
                         {product.categoryLabel}
                       </span>
-                    </div>
 
-                    {/* Quick Specs Overlay on Hover */}
-                    <div className="absolute inset-0 bg-stone-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
-                      <span className="px-3.5 py-1.5 rounded-full bg-amber-600/90 text-white text-xs font-semibold backdrop-blur-sm flex items-center gap-1.5 shadow-lg">
-                        <Eye className="w-3.5 h-3.5" />
-                        <span>View Specifications</span>
+                      {/* Individual & Bulk Badge */}
+                      <span className="absolute bottom-3 left-3 px-2.5 py-1 rounded-md bg-amber-900/90 text-amber-100 text-[11px] font-semibold tracking-wide backdrop-blur-xs">
+                        Individual & Bulk Order Available
                       </span>
                     </div>
-                  </div>
 
-                  {/* Card Content */}
-                  <div className="p-5 space-y-3">
-                    <div>
+                    {/* Card Body */}
+                    <div className="p-5 sm:p-6 space-y-3">
                       {product.regionalTitle && (
-                        <span className="text-[11px] font-bold text-amber-400/90 block mb-0.5">
+                        <span className="text-xs font-bold text-amber-800 block line-clamp-1">
                           {product.regionalTitle}
                         </span>
                       )}
-                      <h3 className="font-display text-lg font-bold text-amber-100 group-hover:text-amber-300 transition-colors line-clamp-1">
+
+                      <h3 className="font-display text-lg sm:text-xl font-bold text-stone-900 group-hover:text-amber-800 transition-colors leading-snug line-clamp-2">
                         {product.title}
                       </h3>
-                      <p className="text-xs text-stone-300 line-clamp-2 mt-1 leading-relaxed">
+
+                      <p className="text-xs sm:text-sm text-stone-600 line-clamp-3 leading-relaxed font-normal">
                         {product.tagline}
                       </p>
-                    </div>
 
-                    {/* Specifications & Origin */}
-                    <div className="space-y-1.5 text-xs text-stone-300 pt-3 border-t border-amber-950/70">
-                      <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5 text-xs">
-                        <span className="text-stone-400 text-[11px] font-medium flex-shrink-0">Craft Material:</span>
-                        <span className="text-stone-300 sm:text-right text-[11px] line-clamp-1">{product.material}</span>
-                      </div>
-                      <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5 text-xs">
-                        <span className="text-stone-400 flex items-center gap-1 text-[11px] font-medium flex-shrink-0">
-                          <MapPin className="w-3 h-3 text-amber-400 flex-shrink-0" />
-                          <span>Origin:</span>
-                        </span>
-                        <span className="text-stone-300 sm:text-right text-[11px] line-clamp-1">{product.origin}</span>
-                      </div>
-                      <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5 text-xs">
-                        <span className="text-stone-400 text-[11px] font-medium flex-shrink-0">Wholesale MOQ:</span>
-                        <span className="text-amber-300 font-semibold sm:text-right text-[11px]">{product.moq}</span>
+                      {/* Sourcing Quick Info */}
+                      <div className="pt-3 border-t border-stone-100 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-stone-600">
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-stone-400 font-medium">Material:</span>
+                          <span className="text-stone-800 font-medium line-clamp-1">{product.material}</span>
+                        </div>
+                        <div className="flex items-center gap-1.5">
+                          <MapPin className="w-3.5 h-3.5 text-amber-700 flex-shrink-0" />
+                          <span className="text-stone-800 font-medium line-clamp-1">{product.origin}</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                {/* Card Bottom: Clear B2B Actions */}
-                <div className="p-5 pt-0 space-y-2">
-                  <div className="grid grid-cols-2 gap-2">
+                  {/* Card Bottom: Clear Single Action Button (View Details & Order) */}
+                  <div className="p-5 sm:p-6 pt-0 space-y-2">
                     <button
                       type="button"
                       onClick={(e) => {
                         e.stopPropagation();
                         onSelectProduct(product);
                       }}
-                      className="py-2.5 px-2.5 rounded-xl bg-stone-900 hover:bg-stone-800 border border-stone-700 text-stone-200 text-xs font-semibold transition-colors flex items-center justify-center gap-1.5 cursor-pointer"
+                      className="w-full py-3 px-4 rounded-xl bg-stone-900 hover:bg-stone-800 text-amber-50 hover:text-white text-xs sm:text-sm font-semibold transition-all flex items-center justify-center gap-2 cursor-pointer shadow-2xs group-hover:bg-amber-800"
                     >
-                      <Eye className="w-3.5 h-3.5 text-amber-400" />
-                      <span>View Details</span>
+                      <Eye className="w-4 h-4 text-amber-300" />
+                      <span>View Details & Order</span>
                     </button>
 
-                    <a
-                      href={`https://wa.me/${EXPORTER_PROFILE.whatsappRaw}?text=${encodeURIComponent(`Hello Subhasish, I am interested in inquiring about "${product.title}" (${product.categoryLabel}). Please share wholesale availability and details.`)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="py-2.5 px-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all flex items-center justify-center gap-1.5 shadow-md shadow-emerald-950/40 cursor-pointer"
-                    >
-                      <MessageSquare className="w-3.5 h-3.5 fill-white" />
-                      <span>WhatsApp</span>
-                    </a>
+                    <div className="flex items-center justify-end text-[11px] text-stone-500 px-1 font-medium">
+                      <span className="text-emerald-700 font-semibold">✓ In Stock / Made to Order</span>
+                    </div>
                   </div>
 
-                  <div className="p-2 rounded-lg bg-[#241a12] border border-amber-950 flex items-center justify-between text-[10px] text-amber-300">
-                    <span>✓ Flexible MOQs & Samples</span>
-                    <span className="text-stone-400">Pre-dispatch video approval</span>
-                  </div>
                 </div>
-
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
 

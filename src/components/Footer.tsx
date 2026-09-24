@@ -134,15 +134,18 @@ export const Footer: React.FC<FooterProps> = ({
           {/* Brand & Craft Mission */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-600 to-amber-900 border border-amber-500/50 flex items-center justify-center text-white shadow-md">
-                <Sparkles className="w-5 h-5 text-amber-300" />
-              </div>
+              <img
+                src="/logo.svg"
+                alt="Utkal Heritage Emblem"
+                className="w-12 h-12 object-contain flex-shrink-0 drop-shadow-sm"
+                referrerPolicy="no-referrer"
+              />
               <div>
                 <span className="font-display text-lg font-bold tracking-wider text-amber-100 block">
-                  HERITAGE CRAFTS INDIA
+                  UTKAL HERITAGE
                 </span>
                 <span className="text-[10px] text-amber-400 uppercase tracking-widest font-semibold block">
-                  Odisha Traditional Handicrafts
+                  Authentic Odisha Handicrafts
                 </span>
               </div>
             </div>
@@ -165,17 +168,17 @@ export const Footer: React.FC<FooterProps> = ({
             </h4>
             <ul className="space-y-2 text-stone-400">
               <li>
-                <a href="#specialties" className="hover:text-amber-300 transition-colors">
+                <a href="#catalog" className="hover:text-amber-300 transition-colors">
                   Paralakhemundi Horn Art (ଶୃଙ୍ଗ ଶିଳ୍ପ)
                 </a>
               </li>
               <li>
-                <a href="#specialties" className="hover:text-amber-300 transition-colors">
+                <a href="#catalog" className="hover:text-amber-300 transition-colors">
                   Raghurajpur Pattachitra (ପଟ୍ଟଚିତ୍ର)
                 </a>
               </li>
               <li>
-                <a href="#specialties" className="hover:text-amber-300 transition-colors">
+                <a href="#catalog" className="hover:text-amber-300 transition-colors">
                   Konark Sandstone & Jali (ପଥର ଖୋଦେଇ)
                 </a>
               </li>
@@ -281,7 +284,7 @@ export const Footer: React.FC<FooterProps> = ({
       {/* Bottom Bar: Copyright & Odia Heritage note */}
       <div className="border-t border-amber-950/80 bg-[#0d0906] py-6 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-stone-500 text-[11px]">
-          <p>© {new Date().getFullYear()} Heritage Crafts India. Mastercrafted in Odisha, India. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Utkal Heritage. Mastercrafted in Odisha, India. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-3 text-stone-400">
             <span>Udyam: {EXPORTER_PROFILE.compliance.udyam}</span>
             <span>•</span>

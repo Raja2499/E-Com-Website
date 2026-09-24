@@ -1,16 +1,17 @@
 import { Product } from '../types';
 
 export const PRODUCTS: Product[] = [
+  // ==================== 1. HORN ARTWORK (Paralakhemundi Shringa Silpa) ====================
   {
     id: 'horn-elephant-sculpture',
     title: 'Paralakhemundi Shringa Silpa: Buffalo Horn Royal Elephant Sculpture',
     regionalTitle: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ: ସିଙ୍ଗ ହାତୀ (Shringa Hati)',
     category: 'horn-art',
-    categoryLabel: 'Paralakhemundi Shringa Silpa',
+    categoryLabel: 'Horn Artwork',
     tagline: 'Authentic Gajapati heritage carving with deep ebony & amber translucent luster',
     description: 'Masterfully chiseled from naturally shed Asian water buffalo horn (Bubalus bubalis) by hereditary artisans of Paralakhemundi. The horn is gently softened over open flame using mustard oil, hand-sawn, chiseled into a royal elephant silhouette, and buffed with charcoal powder and dry Kendu leaves to reveal natural marbleized ebony-to-caramel amber streaks without synthetic lacquer.',
     material: 'Natural Asian Water Buffalo Horn (100% Cruelty-free byproduct)',
-    origin: 'Paralakhemundi, Gajapati District & Cuttack, Odisha, India',
+    origin: 'Paralakhemundi, Gajapati District & Cuttack, Odisha',
     dimensionsCm: '18 × 7 × 15 cm',
     dimensionsInches: '7.1 × 2.8 × 5.9 in',
     weightGrams: '420g',
@@ -37,7 +38,7 @@ export const PRODUCTS: Product[] = [
     title: 'Paralakhemundi Shringa Silpa: Crane Pair Sculpture ("Sarapanki")',
     regionalTitle: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ: ସାରପଙ୍କି (Sarapanki)',
     category: 'horn-art',
-    categoryLabel: 'Paralakhemundi Shringa Silpa',
+    categoryLabel: 'Horn Artwork',
     tagline: 'Iconic historic bird motif carved with fluid curved necks forming a heart',
     description: 'The "Sarapanki" is the crowning motif of Odisha horn artistry, originally designed in the early 1900s for Maharaja Krushna Chandra Gajapati. Two graceful long-neck cranes are sculpted facing each other with arched necks that meet to symbolize harmony and devotion. The natural curve of the horn segment provides natural tensile strength and organic curvature.',
     material: 'Natural Cattle & Buffalo Horn on solid horn pedestal',
@@ -60,18 +61,18 @@ export const PRODUCTS: Product[] = [
       { label: 'Color Variation', value: 'Natural grain transitioning from midnight black to honey' },
       { label: 'Ideal Setting', value: 'Showroom display, architectural centerpiece, luxury gifting' }
     ],
-    artisanalStory: 'When Maharaja Gajapati presented a horn crane figurine to visiting British dignitaries in the early 20th century, Utkal Gourav Madhusudan Das helped showcase it through Orissa Art Wares (1898) to international acclaim across Bombay, Calcutta, and London.'
+    artisanalStory: 'When Maharaja Gajapati presented a horn crane figurine to visiting dignitaries in the early 20th century, Utkal Gourav Madhusudan Das helped showcase it through Orissa Art Wares (1898) to international acclaim across Bombay, Calcutta, and London.'
   },
   {
     id: 'horn-ornate-carved-comb',
     title: 'Paralakhemundi Shringa Silpa: Carved Horn Hair Combs (Kanghi)',
     regionalTitle: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ: ପାନିଆ (Shringa Pania)',
     category: 'horn-art',
-    categoryLabel: 'Paralakhemundi Shringa Silpa',
+    categoryLabel: 'Horn Artwork',
     tagline: 'Hand-pierced openwork peacock & vine crest with anti-static grooming teeth',
     description: 'Traditional Odisha horn hair combs (Kanghi) have been prized for centuries in Indian royal households and bridal trousseaus. Handcrafted from solid buffalo horn plates, each comb features individually sawn, rounded teeth that glide smoothly without generating static electricity or scratching the scalp, crowned with delicate pierced filigree motifs of peacocks and creepers.',
     material: 'Natural Solid Buffalo Horn',
-    origin: 'Cuttack & Gajapati Guilds, Odisha, India',
+    origin: 'Cuttack & Gajapati Guilds, Odisha',
     dimensionsCm: '16 × 5 × 0.8 cm per piece',
     dimensionsInches: '6.3 × 2.0 × 0.3 in',
     weightGrams: '65g each (Set ~195g)',
@@ -97,11 +98,11 @@ export const PRODUCTS: Product[] = [
     title: 'Paralakhemundi Shringa Silpa: Artisan Horn Spoons & Tableware Set',
     regionalTitle: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ: ଚାମଚ ଓ ବାସନ (Shringa Chamacha)',
     category: 'horn-art',
-    categoryLabel: 'Paralakhemundi Shringa Silpa',
+    categoryLabel: 'Horn Artwork',
     tagline: 'Smooth ergonomic tableware with natural golden-caramel & ebony marbling',
     description: 'Pair of handcrafted horn serving spoons, salad tossers, and caviar spoons. Because genuine horn is chemically non-reactive, it does not alter the delicate flavor of caviar, citrus salads, or acidic dressings. Each utensil is shaped by hand, finely sanded, and sealed with food-grade organic beeswax.',
     material: '100% Natural Asian Water Buffalo Horn',
-    origin: 'Odisha Artisan Guilds, India',
+    origin: 'Odisha Artisan Guilds',
     dimensionsCm: '24 × 6 × 2 cm',
     dimensionsInches: '9.4 × 2.4 × 0.8 in',
     weightGrams: '180g / pair',
@@ -121,16 +122,18 @@ export const PRODUCTS: Product[] = [
     ],
     artisanalStory: 'The horn craft creates zero synthetic waste: discarded offcuts are crushed into organic nitrogen fertilizer for village agriculture, maintaining a closed-loop traditional artisan ecosystem.'
   },
+
+  // ==================== 2. PATTACHITRA CLOTH SCROLLS ====================
   {
     id: 'pattachitra-tree-of-life',
     title: 'Raghurajpur Traditional Pattachitra: Tree of Life & Forest Sanctuary',
     regionalTitle: 'ରଘୁରାଜପୁର ପଟ୍ଟଚିତ୍ର: ଜୀବନ ବୃକ୍ଷ (Jibana Brukhya)',
-    category: 'pattachitra',
-    categoryLabel: 'Pattachitra Cloth Paintings',
+    category: 'pattachitra-cloth',
+    categoryLabel: 'Pattachitra Cloth Scrolls',
     tagline: 'GI-tagged heritage scroll painting made with 100% natural stone & shell pigments',
     description: 'An iconic masterwork of Odisha Pattachitra from the UNESCO-recognized heritage craft village of Raghurajpur. Painted on hand-prepared cotton canvas ("Patta") treated with crushed tamarind seed paste and chalk powder. Illustrates the sacred Tree of Life brimming with dancing peacocks, spotted deer, and blossoming lotuses, framed by intricate floral miniature borders.',
     material: 'Seasoned Patta cloth canvas, conch shell white, hingula stone red, haritala yellow, lampblack',
-    origin: 'Raghurajpur Heritage Craft Village, Puri District, Odisha, India',
+    origin: 'Raghurajpur Heritage Craft Village, Puri District, Odisha',
     dimensionsCm: '60 × 90 cm (Custom panels up to 120 × 180 cm)',
     dimensionsInches: '23.6 × 35.4 in',
     weightGrams: '320g (Unframed cloth scroll)',
@@ -141,8 +144,7 @@ export const PRODUCTS: Product[] = [
     imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/1e/Pattachitra_09.jpg',
     galleryImages: [
       'https://upload.wikimedia.org/wikipedia/commons/1/1e/Pattachitra_09.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/4/41/Pattachitra_10.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/6/67/Odia_palm_leaf_manuscript.JPG'
+      'https://upload.wikimedia.org/wikipedia/commons/4/41/Pattachitra_10.jpg'
     ],
     specifications: [
       { label: 'Authenticity Tag', value: 'Geographical Indication (GI) Certified Odisha Pattachitra' },
@@ -156,12 +158,12 @@ export const PRODUCTS: Product[] = [
     id: 'pattachitra-krishna-leela',
     title: 'Raghurajpur Pattachitra: Radha Krishna & Floral Temple Mandalas',
     regionalTitle: 'ପଟ୍ଟଚିତ୍ର ରାଧାକୃଷ୍ଣ ଯୁଗଳ ମୂର୍ତ୍ତି (Radha Krishna Leela)',
-    category: 'pattachitra',
-    categoryLabel: 'Pattachitra Cloth Paintings',
+    category: 'pattachitra-cloth',
+    categoryLabel: 'Pattachitra Cloth Scrolls',
     tagline: 'Devotional temple scroll painting with intricate miniature border bands',
     description: 'A classical Vaishnava narrative scroll portraying divine figures Radha and Krishna standing beneath flowering kadamba trees, flanked by celestial companions and water birds. Characterized by traditional stylized almond-shaped eyes, vibrant flat colors, and geometric border bands inspired by 12th-century Jagannath Temple murals.',
     material: 'Treated Patta Cotton & Tussar Silk Canvas with Natural Pigments',
-    origin: 'Raghurajpur & Puri Crafts Village, Odisha, India',
+    origin: 'Raghurajpur & Puri Crafts Village, Odisha',
     dimensionsCm: '45 × 60 cm',
     dimensionsInches: '17.7 × 23.6 in',
     weightGrams: '210g',
@@ -182,15 +184,136 @@ export const PRODUCTS: Product[] = [
     artisanalStory: 'Pattachitra is intrinsically bound to the rituals of Lord Jagannath in Puri. When the sanctum sanctorum is closed during the Anasara period, master Chitrakars paint traditional "Anasara Patti" scrolls to be worshiped in place of the deities.'
   },
   {
+    id: 'pattachitra-dashavatara-scroll',
+    title: 'Raghurajpur Pattachitra: Dashavatara 10 Avatars of Vishnu Canvas',
+    regionalTitle: 'ରଘୁରାଜପୁର ପଟ୍ଟଚିତ୍ର: ଦଶାବତାର (Dashavatara Patta)',
+    category: 'pattachitra-cloth',
+    categoryLabel: 'Pattachitra Cloth Scrolls',
+    tagline: 'Grand mythological panorama illustrating the 10 cosmic incarnations of Vishnu',
+    description: 'An expansive masterpiece depicting all 10 divine incarnations (Matsya, Kurma, Varaha, Narasimha, Vamana, Parashurama, Rama, Balarama, Buddha, and Kalki) arranged around an ornate central temple medallion. Painted on triple-layered starched cotton canvas with pure natural stone pigments, requiring over 120 artisan hours.',
+    material: 'Handmade Patta cloth, tamarind seed binder, powdered conch shell, hingula, and kajal',
+    origin: 'Raghurajpur, Puri District, Odisha',
+    dimensionsCm: '75 × 120 cm',
+    dimensionsInches: '29.5 × 47.2 in',
+    weightGrams: '410g',
+    moq: 'Flexible • From 2–3 pcs (Custom commissions supported)',
+    productionLeadTime: '25–35 days',
+    customizationAvailable: true,
+    featured: true,
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/41/Pattachitra_10.jpg',
+    galleryImages: [
+      'https://upload.wikimedia.org/wikipedia/commons/4/41/Pattachitra_10.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/1/1e/Pattachitra_09.jpg'
+    ],
+    specifications: [
+      { label: 'Iconography', value: 'Classical Dashavatara narrative following the Odia Bhagavata Purana' },
+      { label: 'Border Detail', value: 'Quadruple concentric floral border (Kusumi & Lahari)' },
+      { label: 'Coating', value: 'Natural pure pine tree resin (Kaintha) protective glaze' }
+    ],
+    artisanalStory: 'Every incarnation is depicted according to strict canons of Dhyana Slokas, ensuring sacred authenticity sought after by art connoisseurs, museums, and high-end cultural institutions worldwide.'
+  },
+
+  // ==================== 3. PALM LEAF (Tala Pothichitra) ====================
+  {
+    id: 'tala-pattachitra-palm-leaf',
+    title: 'Traditional Odisha Tala Pattachitra: Etched Palm Leaf Scroll',
+    regionalTitle: 'ଓଡ଼ିଶା ତାଳ ପଟ୍ଟଚିତ୍ର / ପୋଥିଚିତ୍ର (Tala Pothichitra)',
+    category: 'palm-leaf',
+    categoryLabel: 'Palm Leaf',
+    tagline: 'Precision iron-stylus engraving on seasoned palmyra leaves with natural lampblack ink',
+    description: 'An ancient manuscript art form practiced by Chitrakars of Raghurajpur. Dried palmyra palm leaves are soaked in turmeric water, seasoned, cut to uniform ribbons, and etched by hand using an iron needle stylus ("Lekhani"). Natural lampblack (kajal) and bean juice extract are rubbed across the incisions to bring the fine linework vividly to life.',
+    material: 'Seasoned Palm Leaf (Borassus flabellifer), Organic Lampblack Ink, Cotton Binding',
+    origin: 'Raghurajpur Heritage Craft Village & Puri, Odisha',
+    dimensionsCm: '35 × 50 cm',
+    dimensionsInches: '13.8 × 19.7 in',
+    weightGrams: '190g',
+    moq: 'Flexible • From 2–5 pcs (Sample scroll supported)',
+    productionLeadTime: '15–25 days',
+    customizationAvailable: true,
+    featured: true,
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Pothichitra.jpg',
+    galleryImages: [
+      'https://upload.wikimedia.org/wikipedia/commons/c/ca/Pothichitra.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/6/67/Odia_palm_leaf_manuscript.JPG'
+    ],
+    specifications: [
+      { label: 'Craft Discipline', value: 'Tala Pattachitra / Pothichitra (GI-registered heritage of Odisha)' },
+      { label: 'Stylus Tool', value: 'Sharp hardened steel Lekhani needle with organic vegetable ink rub' },
+      { label: 'Preservation', value: 'Naturally insect-resistant treated palm leaves enduring for generations' },
+      { label: 'Format Options', value: 'Folding manuscript book, hanging vertical scroll, or framed wall panel' }
+    ],
+    artisanalStory: 'Palm leaf etching preceded paper in ancient Odisha, used for recording sacred astronomical treatises and the Gita Govinda. A single miscalculation with the stylus cannot be erased, demanding immaculate concentration.'
+  },
+  {
+    id: 'palm-leaf-radha-krishna-gita-govinda',
+    title: 'Tala Pothichitra: Jayadeva Gita Govinda & Radha Krishna Folding Scroll',
+    regionalTitle: 'ତାଳପତ୍ର ପୋଥି: ଗୀତ ଗୋବିନ୍ଦ (Gita Govinda Palm Leaf)',
+    category: 'palm-leaf',
+    categoryLabel: 'Palm Leaf',
+    tagline: 'Fine micro-engraved 12th-century Sanskrit lyrical verses with devotional illustrations',
+    description: 'A traditional accordion-folding palm leaf manuscript inspired by 12th-century Odia poet Jayadeva’s Gita Govinda. Master artisans stitch seasoned palmyra leaves with red silk thread, etching micro-calligraphy and narrative scenes of divine love, lush Vrindavan groves, and floral arabesques with sharp iron styluses.',
+    material: 'Turmeric-treated Palm Leaves, Black Carbon Lampblack, Woven Silk Threads',
+    origin: 'Puri District & Raghurajpur, Odisha',
+    dimensionsCm: '20 × 40 cm (Extended accordion)',
+    dimensionsInches: '7.9 × 15.7 in',
+    weightGrams: '160g',
+    moq: 'Flexible • From 3–5 pcs (Sample book supported)',
+    productionLeadTime: '15–20 days',
+    customizationAvailable: true,
+    featured: false,
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/6/67/Odia_palm_leaf_manuscript.JPG',
+    galleryImages: [
+      'https://upload.wikimedia.org/wikipedia/commons/6/67/Odia_palm_leaf_manuscript.JPG',
+      'https://upload.wikimedia.org/wikipedia/commons/c/ca/Pothichitra.jpg'
+    ],
+    specifications: [
+      { label: 'Stylus Precision', value: 'Micro-engraving under 0.3mm line thickness' },
+      { label: 'Traditional Treatment', value: 'Leaves boiled in turmeric and neem decoctions to repel insects' },
+      { label: 'Structure', value: 'Interlinked palm ribbons with hand-turned wooden cover batons' }
+    ],
+    artisanalStory: 'In classical Odia courts, scholars and astrologers etched royal horoscopes and epic poems into palm leaves. The craft is celebrated across global museums as one of India’s most intricate book arts.'
+  },
+  {
+    id: 'palm-leaf-peacock-bookmarks',
+    title: 'Tala Pothichitra: Hand-Etched Palm Leaf Bookmarks & Miniature Panels',
+    regionalTitle: 'ତାଳପତ୍ର ବହି ମାର୍କର ଓ କ୍ଷୁଦ୍ର ଚିତ୍ର (Palm Leaf Bookmarks)',
+    category: 'palm-leaf',
+    categoryLabel: 'Palm Leaf',
+    tagline: 'Delicate openwork pierced palm leaf ribbons with silky tassels for gifting & retail',
+    description: 'Set of artisanal palm leaf bookmarks and miniature vertical decorative hangings. Each strip is carved with pierced openwork ("Jali") and etched with peacocks, elephants, dancing Odissi dancers, and auspicious temple trees, completed with pure silk floss tassels.',
+    material: 'Natural cured palm leaf with organic lampblack fill and silk thread',
+    origin: 'Raghurajpur Crafts Village, Odisha',
+    dimensionsCm: '20 × 4 cm per piece (Set of 4 or 6)',
+    dimensionsInches: '7.9 × 1.6 in',
+    weightGrams: '45g per set',
+    moq: 'Flexible • From 15–20 sets (Sample set supported)',
+    productionLeadTime: '10–14 days',
+    customizationAvailable: true,
+    featured: false,
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Pothichitra.jpg',
+    galleryImages: [
+      'https://upload.wikimedia.org/wikipedia/commons/c/ca/Pothichitra.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/6/67/Odia_palm_leaf_manuscript.JPG'
+    ],
+    specifications: [
+      { label: 'Retail Appeal', value: 'Extremely popular impulse gift, book lover souvenir & corporate favor' },
+      { label: 'Pierced Detail', value: 'Hand-cut lattice perforations creating translucent shadow play' },
+      { label: 'Custom Packaging', value: 'Custom branded kraft card backing or sleeve available' }
+    ],
+    artisanalStory: 'A favorite of international museum gift shops and heritage boutiques, offering accessible entry points for authentic living Odia palm leaf craft.'
+  },
+
+  // ==================== 4. STONE CARVINGS ====================
+  {
     id: 'stone-konark-wheel-relief',
     title: 'Konark Sun Temple Sandstone Wheel & Relief Carving',
     regionalTitle: 'କୋଣାର୍କ ସୂର୍ଯ୍ୟ ମନ୍ଦିର ପଥର ଚକ୍ର (Konark Chaka)',
     category: 'stone-carving',
-    categoryLabel: 'Handmade Stone Carvings',
+    categoryLabel: 'Stone Carvings',
     tagline: 'Hand-chiseled architectural sandstone carving inspired by 13th-century Konark',
     description: 'Sculpted by master silpis using traditional steel chisels and punches, this relief faithfully depicts the iconic Sun Dial Wheel of the 13th-century UNESCO World Heritage Sun Temple at Konark. Features the 8 wide spokes representing the 8 pahars (3-hour periods) of the day, 8 thin spokes, and intricate medallions showing musicians, dancers, and royal processions.',
     material: 'Natural Odisha Golden Sandstone / Khondalite Stone',
-    origin: 'Konark & Puri Stonemasons Guild, Odisha, India',
+    origin: 'Konark & Puri Stonemasons Guild, Odisha',
     dimensionsCm: '30 × 5 × 30 cm (Available up to 90 cm diameter)',
     dimensionsInches: '11.8 × 2.0 × 11.8 in',
     weightGrams: '4,600g',
@@ -216,11 +339,11 @@ export const PRODUCTS: Product[] = [
     title: 'Hand-carved Sandstone Openwork Jali Lantern',
     regionalTitle: 'ପଥର ଖୋଦେଇ ଜାଲି ଦୀପ (Pathara Jali Dipa)',
     category: 'stone-carving',
-    categoryLabel: 'Handmade Stone Carvings',
+    categoryLabel: 'Stone Carvings',
     tagline: 'Intricate pierced architectural lattice work casting warm ambient shadows',
     description: 'Chiseled by hand from a single block of natural golden sandstone, this lantern features precision pierced "Jali" geometric and floral lattice work. When lit with a tea light or LED candle, it casts dramatic filigree shadow patterns across walls, creating an authentic sanctuary atmosphere.',
     material: 'Natural Indian Golden Sandstone',
-    origin: 'Stone Artisans Guild, Odisha, India',
+    origin: 'Stone Artisans Guild, Odisha',
     dimensionsCm: '15 × 15 × 28 cm',
     dimensionsInches: '5.9 × 5.9 × 11.0 in',
     weightGrams: '3,800g',
@@ -245,11 +368,11 @@ export const PRODUCTS: Product[] = [
     title: 'Monolithic Soapstone Undercut Elephant with Baby in Womb',
     regionalTitle: 'ଏକ ପଥର ଖୋଦେଇ ଗର୍ଭ ହାତୀ (Garbha Hati)',
     category: 'stone-carving',
-    categoryLabel: 'Handmade Stone Carvings',
+    categoryLabel: 'Stone Carvings',
     tagline: 'Single-stone masterwork: outer pierced elephant containing an independently chiseled baby inside',
     description: 'A celebrated masterwork of Indian stonemasons: an elephant hollowed out through tiny perforated latticework apertures on its flank to sculpt a second, fully formed, free-moving baby elephant inside—all chiseled from one solid piece of natural soapstone with zero joints or adhesives.',
     material: 'Natural Indian Soapstone (Steatite)',
-    origin: 'Traditional Stoneware Clusters, Odisha & Eastern India',
+    origin: 'Traditional Stoneware Clusters, Odisha',
     dimensionsCm: '12 × 7 × 10 cm',
     dimensionsInches: '4.7 × 2.8 × 3.9 in',
     weightGrams: '650g',
@@ -268,127 +391,6 @@ export const PRODUCTS: Product[] = [
       { label: 'Popularity', value: 'Top seller for museum shops, gift retailers, and art galleries' }
     ],
     artisanalStory: 'The master craftsman works through small lattice holes using curved steel scrapers and spatial memory. One millimeter of over-chiseling can snap the inner calf, making this one of India’s most demanding stonecraft disciplines.'
-  },
-  {
-    id: 'custom-dhokra-brass-art',
-    title: 'Odisha Dhokra Lost-Wax Cast Bell Metal Tribal Sculpture',
-    regionalTitle: 'ଓଡ଼ିଶା ଢୋକ୍ରା ବେଲ୍ ମେଟାଲ୍ କ୍ରାଫ୍ଟ (Dhokra Silpa)',
-    category: 'custom-crafts',
-    categoryLabel: 'Traditional & Custom Crafts',
-    tagline: '4,000-year-old non-ferrous lost-wax metal casting with primitive wire textures',
-    description: 'Practiced by tribal metal casters in Rayagada, Mayurbhanj, and Dhenkanal in Odisha. This 4,000-year-old "Cire-perdue" (lost-wax) technique uses hand-wound beeswax threads over a clay core, covered in riverbed clay, and fired in open pits where molten brass alloy replaces the melted wax to create rustic tribal musicians, horses, and ceremonial decor.',
-    material: 'Bell Metal / Brass Alloy with natural clay mold',
-    origin: 'Tribal Artisan Guilds of Odisha, India',
-    dimensionsCm: '20 × 8 × 22 cm',
-    dimensionsInches: '7.9 × 3.1 × 8.6 in',
-    weightGrams: '1,200g',
-    moq: 'Flexible • From 5–10 pcs (Sample casting supported)',
-    productionLeadTime: '20–28 days',
-    customizationAvailable: true,
-    featured: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/28/Dhokra_figurines_by_Dharua_women_of_Odisha.jpg',
-    galleryImages: [
-      'https://upload.wikimedia.org/wikipedia/commons/2/28/Dhokra_figurines_by_Dharua_women_of_Odisha.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/b/b1/A_Dhokra_figurine_made_by_a_Dharua_tribe.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/7/77/Metal_objects_at_Odisha_Crafts_Museum_04.jpg'
-    ],
-    specifications: [
-      { label: 'Casting Process', value: 'Traditional Cire-perdue (lost wax) using clay and beeswax' },
-      { label: 'Surface Texture', value: 'Organic coiled brass wire detailing and antique golden patina' },
-      { label: 'Uniqueness', value: 'Every clay mold is broken during casting, ensuring no two pieces are identical' }
-    ],
-    artisanalStory: 'Dhokra casting is one of the oldest living metallurgical traditions in human history, tracing its lineage directly to the Dancing Girl of Mohenjo-daro (c. 2500 BCE). Odisha tribal families keep this ancient metallurgy alive in rural forest settlements.'
-  },
-  {
-    id: 'tala-pattachitra-palm-leaf',
-    title: 'Traditional Odisha Tala Pattachitra: Etched Palm Leaf Scroll',
-    regionalTitle: 'ଓଡ଼ିଶା ତାଳ ପଟ୍ଟଚିତ୍ର / ପୋଥିଚିତ୍ର (Tala Pothichitra)',
-    category: 'pattachitra',
-    categoryLabel: 'Pattachitra Cloth Paintings',
-    tagline: 'Precision iron-stylus engraving on seasoned palmyra leaves with natural lampblack ink',
-    description: 'An ancient manuscript art form practiced by Chitrakars of Raghurajpur. Dried palmyra palm leaves are soaked in turmeric water, seasoned, cut to uniform ribbons, and etched by hand using an iron needle stylus ("Lekhani"). Natural lampblack (kajal) and bean juice extract are rubbed across the incisions to bring the fine linework vividly to life.',
-    material: 'Seasoned Palm Leaf (Borassus flabellifer), Organic Lampblack Ink, Cotton Binding',
-    origin: 'Raghurajpur Heritage Craft Village & Puri, Odisha, India',
-    dimensionsCm: '35 × 50 cm',
-    dimensionsInches: '13.8 × 19.7 in',
-    weightGrams: '190g',
-    moq: 'Flexible • From 2–5 pcs (Sample scroll supported)',
-    productionLeadTime: '15–25 days',
-    customizationAvailable: true,
-    featured: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/ca/Pothichitra.jpg',
-    galleryImages: [
-      'https://upload.wikimedia.org/wikipedia/commons/c/ca/Pothichitra.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/6/67/Odia_palm_leaf_manuscript.JPG',
-      'https://upload.wikimedia.org/wikipedia/commons/c/cc/Pattachitra_Making.jpg'
-    ],
-    specifications: [
-      { label: 'Craft Discipline', value: 'Tala Pattachitra / Pothichitra (GI-registered heritage of Odisha)' },
-      { label: 'Stylus Tool', value: 'Sharp hardened steel Lekhani needle with organic vegetable ink rub' },
-      { label: 'Preservation', value: 'Naturally insect-resistant treated palm leaves enduring for generations' },
-      { label: 'Format Options', value: 'Folding manuscript book, hanging vertical scroll, or framed wall panel' }
-    ],
-    artisanalStory: 'Palm leaf etching preceded paper in ancient Odisha, used for recording sacred astronomical treatises and the Gita Govinda. A single miscalculation with the stylus cannot be erased, demanding immaculate concentration.'
-  },
-  {
-    id: 'custom-pipili-applique',
-    title: 'Pipili Chandua: Traditional Odisha Appliqué Patchwork Textile',
-    regionalTitle: 'ପିପିଲି ଚାନ୍ଦୁଆ (Pipili Appliqué Craft)',
-    category: 'custom-crafts',
-    categoryLabel: 'Traditional & Custom Crafts',
-    tagline: 'GI-tagged colorful stitched canopies, tapestries & lampshades with hand-embroidered mirrorwork',
-    description: 'A historic craft originating from the 12th-century Jagannath Temple traditions in Pipili. Master artisans cut vibrantly dyed cotton fabrics into stylized motifs of elephants, peacocks, trees, and mandalas, sewing them with precision chain stitches onto contrasting backdrops with embroidered mirrorwork ("Tarasa").',
-    material: 'Hand-dyed 100% Cotton, Glass Mirror Accents, Durable Embroidered Threading',
-    origin: 'Pipili Crafts Village, Puri District, Odisha, India',
-    dimensionsCm: '90 × 90 cm (Custom sizes available)',
-    dimensionsInches: '35.4 × 35.4 in',
-    weightGrams: '450g',
-    moq: 'Flexible • From 5–10 pcs (Sample canopy supported)',
-    productionLeadTime: '15–22 days',
-    customizationAvailable: true,
-    featured: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/8/82/Pipili_handicrafts.jpg',
-    galleryImages: [
-      'https://upload.wikimedia.org/wikipedia/commons/8/82/Pipili_handicrafts.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/e/ed/Pipli_Craftsman_at_Work_%2825355371872%29.jpg'
-    ],
-    specifications: [
-      { label: 'Craft Origin', value: 'Pipili Appliqué Work (Geographical Indication GI tagged)' },
-      { label: 'Stitchwork', value: 'Fine manual chain stitch, buttonhole stitch, and mirror embroidery' },
-      { label: 'Use Cases', value: 'Wall hangings, decorative canopies, lampshades, resort & festive decor' },
-      { label: 'Colorfastness', value: 'Premium vat-dyed cotton fabrics designed for vibrant display' }
-    ],
-    artisanalStory: 'The craft developed under the patronage of the Gajapati Kings to furnish the deities with ceremonial umbrellas, canopies (Chandua), and chariot banners during the annual Puri Rath Yatra.'
-  },
-  {
-    id: 'cuttack-tarakasi-silver-filigree',
-    title: 'Cuttack Tarakasi: Pure Silver Filigree Peacock & Konark Medallion',
-    regionalTitle: 'କଟକ ତାରକସି ରୂପା କାମ (Cuttack Silver Filigree / Tarakasi)',
-    category: 'silver-filigree',
-    categoryLabel: 'Cuttack Silver Filigree (Tarakasi)',
-    tagline: 'GI-tagged 500-year-old gossamer silver wire metallurgy with hair-fine hand-twisted filigree',
-    description: 'A prized 500-year-old GI-tagged heritage of the Silver City, Cuttack. Master artisans draw pure silver (92.5% to 99% fine sterling purity) through diamond dies into gossamer threads thinner than human hair. Two or more threads are hand-crimped with minute zig-zag ripples and shaped into intricate floral motifs, dancing peacocks, and temple chariots with surgical tweezers without automated stamping.',
-    material: 'Pure Sterling Silver (92.5%–98% purity), Gold-dipped accents available',
-    origin: 'Cuttack "Silver City" Artisan Quarter, Odisha, India',
-    dimensionsCm: '18 × 14 × 6 cm (Mounted in presentation frame or luxury acrylic case)',
-    dimensionsInches: '7.1 × 5.5 × 2.4 in',
-    weightGrams: '180g (Net silver weight ~95g)',
-    moq: 'Flexible • From 3–5 pcs (Sample piece supported)',
-    productionLeadTime: '15–25 days',
-    customizationAvailable: true,
-    featured: true,
-    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/Silver_filigree_ornament.jpg',
-    galleryImages: [
-      'https://upload.wikimedia.org/wikipedia/commons/e/ec/Silver_filigree_ornament.jpg',
-      'https://upload.wikimedia.org/wikipedia/commons/5/50/Exhibits_at_the_Odisha_Crafts_Museum_17.jpg'
-    ],
-    specifications: [
-      { label: 'Craft Origin', value: 'Cuttack Tarakasi (Geographical Indication GI-tagged heritage)' },
-      { label: 'Wire Specification', value: 'Dual-twisted drawn fine silver wire (0.2mm to 0.4mm gauge)' },
-      { label: 'Authenticity Guarantee', value: 'Assay certified silver purity with artisan provenance card' },
-      { label: 'Packaging', value: 'Velvet-lined gift presentation box with anti-tarnish protective sealing' }
-    ],
-    artisanalStory: 'Dating back to maritime trade with ancient Southeast Asia and Persian influences, Cuttack Tarakasi flourished under imperial patronage. The famed Durga Puja "Chandi Medha" (silver tableaus) in Cuttack feature quintals of pure silver filigree crafted by hereditary silversmiths.'
   }
 ];
 
@@ -400,13 +402,12 @@ export const EXPORTER_PROFILE = {
   whatsappRaw: '919861097633',
   email: 'subhasish2499@gmail.com',
   specialties: [
-    'Paralakhemundi Shringa Silpa (Traditional Horn Artwork)',
-    'Raghurajpur Pattachitra (Hand-painted Cloth & Palm Leaf Scrolls)',
-    'Konark Stone Carvings & Architectural Relatives',
-    'Cuttack Tarakasi (Fine Silver Filigree Artifacts)',
-    'Pipili Applique & Tribal Dhokra Lost-Wax Metallurgy'
+    'Horn Artwork (Paralakhemundi Shringa Silpa)',
+    'Pattachitra Cloth Scrolls (Raghurajpur Heritage Patta)',
+    'Palm Leaf (Tala Pothichitra & Engravings)',
+    'Stone Carvings (Konark & Puri Architectural Stonework)'
   ],
-  markets: 'Domestic & Global (India, Europe, Americas, Middle East, Japan & Worldwide)',
+  markets: 'Domestic & International Consignments',
   flexibleMoqNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.',
   compliance: {
     udyam: 'UDYAM-OD-19-0048219',
@@ -432,11 +433,11 @@ export interface CategorySourcingInfo {
 export const CATEGORY_SOURCING_INFO: CategorySourcingInfo[] = [
   {
     id: 'horn-art',
-    name: 'Paralakhemundi Shringa Silpa',
-    regionalOdishaName: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ (Horn Art)',
-    tagline: 'Gajapati Royal Heritage Buffalo & Cattle Horn Carving',
+    name: 'Horn Artwork',
+    regionalOdishaName: 'ପାରଳାଖେମୁଣ୍ଡି ଶୃଙ୍ଗ ଶିଳ୍ପ (Shringa Silpa)',
+    tagline: 'Paralakhemundi Gajapati Heritage Buffalo & Cattle Horn Carvings',
     moq: 'Flexible • From 5–10 pcs (Sample pieces supported)',
-    turnaround: '15–22 days depending on batch volume',
+    turnaround: '15–20 days',
     description: 'Carved from natural cattle and water buffalo horn through generational heat-molding, hand chiseling, and Kendu leaf and charcoal buffing. Features our signature high-gloss ebony-to-amber translucent luster without chemical lacquers.',
     highlights: [
       'Paralakhemundi Royal Elephants & Tabletop Figurines',
@@ -447,66 +448,50 @@ export const CATEGORY_SOURCING_INFO: CategorySourcingInfo[] = [
     pricingNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
   },
   {
-    id: 'pattachitra',
-    name: 'Pattachitra Cloth Paintings & Palm Leaf',
-    regionalOdishaName: 'ପଟ୍ଟଚିତ୍ର (Raghurajpur Heritage Scrolls)',
-    tagline: 'Ancient Visual Narrative Scrolls on Treated Cotton, Silk & Palm Leaf',
+    id: 'pattachitra-cloth',
+    name: 'Pattachitra Cloth Scrolls',
+    regionalOdishaName: 'ରଘୁରାଜପୁର ପଟ୍ଟଚିତ୍ର (Raghurajpur Heritage Scrolls)',
+    tagline: 'Ancient Visual Narrative Scrolls on Hand-Treated Cotton Canvas',
     moq: 'Flexible • From 2–5 pieces (Custom single commissions supported)',
     turnaround: '20–30 days (100% hand-painted)',
-    description: 'Master chitrakar village artwork made on seasoned patta cloth coated with chalk and tamarind gum, as well as iron-stylus etched Tala Pothichitra palm leaf manuscripts. Painted using 100% natural mineral, conch shell, and stone pigments.',
+    description: 'Master chitrakar village artwork made on seasoned patta cloth coated with chalk and tamarind gum. Painted using 100% natural mineral, conch shell, and stone pigments with squirrel-hair brushes.',
     highlights: [
       'Sacred Tree of Life & Forest Sanctuaries',
       'Traditional Krishna-Leela & Mythological Scrolls',
-      'Botanical Border Hangings & Folk Mandalas',
-      'Tala Pattachitra Iron-needle Etched Palm Leaf Scrolls'
+      'Dashavatara (10 Incarnations of Vishnu) Canvas Scrolls',
+      'Botanical Border Hangings & Folk Mandalas'
+    ],
+    pricingNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
+  },
+  {
+    id: 'palm-leaf',
+    name: 'Palm Leaf',
+    regionalOdishaName: 'ତାଳ ପଟ୍ଟଚିତ୍ର / ପୋଥିଚିତ୍ର (Tala Pothichitra)',
+    tagline: 'Iron-Needle Stylus Engraved Palmyra Palm Leaf Manuscripts & Scrolls',
+    moq: 'Flexible • From 2–5 pieces (Sample pieces supported)',
+    turnaround: '15–22 days',
+    description: 'Traditional Odisha Tala Pothichitra etched onto seasoned palmyra leaves with sharp iron needles (Lekhani) and rubbed with natural lampblack and bean juice extract.',
+    highlights: [
+      'Tala Pattachitra Iron-needle Etched Palm Leaf Scrolls',
+      'Gita Govinda & Radha Krishna Folding Manuscripts',
+      'Pierced Openwork Palm Leaf Bookmarks & Miniature Panels',
+      'Auspicious Hanging Wall Art & Heritage Frames'
     ],
     pricingNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
   },
   {
     id: 'stone-carving',
-    name: 'Handmade Stone Carvings',
+    name: 'Stone Carvings',
     regionalOdishaName: 'ପଥର ଖୋଦେଇ (Konark Stonework Tradition)',
     tagline: 'Odisha Sandstone, Soapstone & Jali Lattice Work',
     moq: 'Flexible • From 3–5 pieces (Sample pieces supported)',
     turnaround: '20–30 days',
-    description: 'Carved by generational stonemasons inspired by the legendary temples of Konark and Puri. Famous for intricate undercut Jali filigree, pierced candle lamps, and enduring architectural decor.',
+    description: 'Carved by generational stonemasons inspired by the legendary 13th-century Sun Temple of Konark and Puri. Famous for intricate undercut Jali filigree, pierced candle lamps, and enduring architectural decor.',
     highlights: [
       'Konark Sun Temple Sandstone Wheel Reliefs',
       'Pierced Sandstone Jali Lanterns & Tea-light Votives',
       'Undercut Soapstone Elephants with Inner Baby',
-      'Bespoke Sculptures & Garden Artifacts'
-    ],
-    pricingNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
-  },
-  {
-    id: 'silver-filigree',
-    name: 'Cuttack Tarakasi Silver Filigree',
-    regionalOdishaName: 'କଟକ ତାରକସି ରୂପା କାମ (Silver Filigree)',
-    tagline: '500-Year-Old Hair-Fine Sterling Silver Wire Craft',
-    moq: 'Flexible • From 3–5 pieces (Sample presentation pieces supported)',
-    turnaround: '15–25 days',
-    description: 'Delicate gossamer sterling silver handiwork from Cuttack. Master silversmiths twist and solder micro-gauge silver wires into breathtaking jewelry, peacocks, Konark medallions, and ceremonial showpieces.',
-    highlights: [
-      'Silver Filigree Dancing Peacocks & Wildlife Motifs',
-      'Konark Wheel & Floral Silver Table Medallions',
-      'Miniature Rath (Temple Chariot) Filigree Models',
-      'Custom Corporate Mementos & Luxury Bridal Gifting'
-    ],
-    pricingNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
-  },
-  {
-    id: 'custom-crafts',
-    name: 'Custom & Metal Crafts',
-    regionalOdishaName: 'ଢୋକ୍ରା ଓ ହସ୍ତଶିଳ୍ପ (Dhokra & Regional Crafts)',
-    tagline: 'Ancient Lost-Wax Bell Metal & Bespoke Indian Artisan Sourcing',
-    moq: 'Flexible • From 5–10 pieces (Sample prototypes available)',
-    turnaround: '20–30 days',
-    description: 'Tribal lost-wax bell metal casting with primitive wire textures, plus bespoke sourcing across Odisha and pan-India artisan clusters tailored to buyer sketches and project briefs.',
-    highlights: [
-      'Dhokra Lost-wax Brass Statues & Tribal Figurines',
-      'Pipili Applique Chandua Canopies & Wall Hangings',
-      'Traditional Brass Oil Lamps (Diyas) & Hardware',
-      'Custom Designs from Buyer Sketches / Reference Photos'
+      'Bespoke Sculptures & Architectural Garden Artifacts'
     ],
     pricingNote: 'We support businesses of all sizes, from boutique retailers to large distributors. We offer flexible MOQs and sample shipments. Contact us with your requirements for a custom proposal.'
   }

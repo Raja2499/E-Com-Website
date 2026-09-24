@@ -3,12 +3,11 @@ import { Product, ProductCategory } from './types';
 import { EXPORTER_PROFILE } from './data/products';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { SpecialtyFocus } from './components/SpecialtyFocus';
-import { CategoryPricing } from './components/CategoryPricing';
+import { StoryAndOrigin } from './components/StoryAndOrigin';
+import { ProductBannerCarousel } from './components/ProductBannerCarousel';
 import { ProductCatalog } from './components/ProductCatalog';
-import { WholesaleCapabilities } from './components/WholesaleCapabilities';
+import { AboutUs } from './components/AboutUs';
 import { ExportCompliance } from './components/ExportCompliance';
-import { ArtisanHeritage } from './components/ArtisanHeritage';
 import { ContactSection } from './components/ContactSection';
 import { ProductDetailModal } from './components/ProductDetailModal';
 import { CatalogueDownloadModal } from './components/CatalogueDownloadModal';
@@ -35,16 +34,9 @@ export default function App() {
     setIsPolicyModalOpen(true);
   };
 
-  const handleQuickInquiry = (topic: string) => {
-    const whatsappUrl = `https://wa.me/${EXPORTER_PROFILE.whatsappRaw}?text=${encodeURIComponent(
-      `Hello Subhasish, I would like to inquire about wholesale sourcing for ${topic}.`
-    )}`;
-    window.open(whatsappUrl, '_blank');
-  };
-
   return (
-    <div className="min-h-screen bg-[#120d09] text-stone-100 flex flex-col font-sans selection:bg-amber-800 selection:text-white">
-      {/* Navigation Bar */}
+    <div className="min-h-screen bg-[#faf8f5] text-stone-900 flex flex-col font-sans selection:bg-amber-800 selection:text-white">
+      {/* Navigation Bar with Active Scroll Highlighting */}
       <Navbar
         onOpenCatalogueModal={() => setIsCatalogueModalOpen(true)}
         onOpenPolicyModal={handleOpenPolicy}
@@ -52,25 +44,22 @@ export default function App() {
 
       {/* Main Content */}
       <main className="flex-1">
-        {/* Hero Section */}
+        {/* 1. Hero Section */}
         <Hero
           onOpenCatalogueModal={() => setIsCatalogueModalOpen(true)}
           onScrollToCatalog={scrollToCatalog}
         />
 
-        {/* Core Odisha Craft Specialties (Horn Art, Pattachitra, Stone Carving, Silver Filigree) */}
-        <SpecialtyFocus
-          onSelectCategory={(cat) => {
-            setSelectedCategory(cat);
-            scrollToCatalog();
-          }}
-          onOpenQuickInquiry={handleQuickInquiry}
+        {/* 2. Story and Origin Section: Odisha's Ancient Handmade Artworks */}
+        <StoryAndOrigin />
+
+        {/* 3. Product Showcase Banner: Slides through every product every 20 seconds */}
+        <ProductBannerCarousel
+          onSelectProduct={(product) => setSelectedProduct(product)}
+          onScrollToCatalog={scrollToCatalog}
         />
 
-        {/* Story and Origin: Deep-dive into Raghurajpur, Paralakhemundi, Cuttack & Konark */}
-        <ArtisanHeritage />
-
-        {/* Handcrafted Masterpieces Showcase (Crisp lighting, studio backgrounds, wholesale specs) */}
+        {/* 4. Products Section (Showing 2 products per row, open for individual & wholesale orders) */}
         <ProductCatalog
           selectedCategory={selectedCategory}
           onSelectCategory={setSelectedCategory}
@@ -78,37 +67,32 @@ export default function App() {
           onOpenCatalogueModal={() => setIsCatalogueModalOpen(true)}
         />
 
-        {/* Category Sourcing Guide - Sourcing criteria & policies across categories */}
-        <CategoryPricing
-          onOpenQuickInquiry={handleQuickInquiry}
-        />
-
-        {/* Wholesale Capabilities (Tailored for Domestic & Global Buyers) */}
-        <WholesaleCapabilities
+        {/* 5. About Us Section: Why Source With Us & Comprehensive Wholesale Capabilities */}
+        <AboutUs
           onOpenCatalogueModal={() => setIsCatalogueModalOpen(true)}
         />
 
-        {/* Logistics, Safe Anti-Shock Packaging & Standards */}
+        {/* 6. Trade Policies, Anti-Shock Packaging & Export Compliance */}
         <ExportCompliance />
 
-        {/* Direct Contact & Inquiry Form */}
+        {/* 7. Direct Contact & Dual Order Inquiry Form */}
         <ContactSection />
       </main>
 
-      {/* Website Footer with Prominent Trust Signals (Udyam, IEC, GSTIN) and Policy links */}
+      {/* Website Footer */}
       <Footer
         onOpenPolicyModal={handleOpenPolicy}
         onOpenCatalogueModal={() => setIsCatalogueModalOpen(true)}
       />
 
-      {/* Product Detail Specifications Modal */}
+      {/* Product Detail Specifications Modal with Individual vs Wholesale Ordering Options */}
       <ProductDetailModal
         product={selectedProduct}
         onClose={() => setSelectedProduct(null)}
         onRequestExportCatalog={() => setIsCatalogueModalOpen(true)}
       />
 
-      {/* Export Policies & Legal Compliance Modal (Shipping, Returns, Terms of Trade, Statutory Registrations) */}
+      {/* Export Policies & Legal Compliance Modal */}
       <PoliciesComplianceModal
         isOpen={isPolicyModalOpen}
         initialTab={activePolicyTab}
@@ -121,7 +105,7 @@ export default function App() {
         onClose={() => setIsCatalogueModalOpen(false)}
       />
 
-      {/* Floating Direct WhatsApp Assistance (Clean icon trigger) */}
+      {/* Floating Direct WhatsApp Assistance */}
       <FloatingWhatsApp />
     </div>
   );
